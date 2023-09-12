@@ -1,0 +1,33 @@
+
+#--------------------------------------------------
+# Text chunks
+
+<html/title>
+Title of the module
+<title/html>
+
+<html/header>
+This is a collection of <br> Interactive and Animated <br> Learning Modules
+<header/html>
+
+<html/content>
+<p>The content of this interactive and animated learning module is...</p>
+<content/html>
+
+<html/motivation>
+<p>The goal of this interactive and animated learning module is...</p>
+<motivation/html>
+
+<html/approach>
+<p>The approach of this interactive and animated learning module is...</p>
+<approach/html>
+
+#--------------------------------------------------
+
+<html/module_header_01>
+Module 1)...
+<module_header_01/html>
+
+<html/module_content_01>
+<p>This module is about...</p>
+<module_content_01/html>
