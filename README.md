@@ -1,4 +1,4 @@
-# illustration-tool
+# interactive-animated-illustration-tool
 
 ## Introduction
 
