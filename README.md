@@ -12,7 +12,23 @@ https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/index.h
 
 ## Content
 
-...
+### Working with the Template
+
+1. Create a folder named "figures" with all the figures that you want to use
+2. Open the input_chunks.txt file - Each Section starts with e.g., <py/NAME> and ends with e.g., <NAME/py>
+3. Change the content in each section accordingly and save the input_chunks.txt file
+4. Run the merge_script.py file. A html_output file is created.
+
+#### Example: Adding an additional slider 
+
+1. Under slider, add a new slider with labels and values in the following form: "slider1": [1, 2, 3],
+2. The "initialIndex" function sets the initial index position of the slider when they are first displayed. Note, that the first index value is counted from 0. If we want to display the value 2 as default, we would need to set the index value to 1.
+3. Next, add the labels for the slider and the button, which are displayed in the final file
+4. Now, enter the index of the last slider input value you defined previously in Step 1 under slider_value_max. 
+5. Enter the index of the default value you want to display. 
+6. Save the input_chunks.txt file and run the merge_script.py file.
+
+Changing or adding Text Chunks or Audio text Chunks works similarly.
 
 ## Steps
 
