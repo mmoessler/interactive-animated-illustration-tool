@@ -69,7 +69,7 @@ updateFiguresAndSliderValues = function() {
       sliderValue1Tmp = eval('slider' + (j + 1) + '.getValue()');
       figurePathTmp = figurePathTmp.concat('_' + (sliderValue1Tmp + 1));
       // set the slider value
-      document.getElementById(sliderValueIds[j]).innerHTML = sliders.sliderValueParStr[j] + sliders.value[sliderTmp][sliderValue1Tmp] + "\\)";
+      document.getElementById(sliderValueIds[j]).innerHTML = "\\(" + sliders.sliderValueParStr[j] + " = " + sliders.value[sliderTmp][sliderValue1Tmp] + "\\)";
       MathJax.typeset([document.getElementById(sliderValueIds[j])]);
     }
     document.getElementById(figureIds[i]).setAttribute("src", figurePathTmp.concat('.svg'));
