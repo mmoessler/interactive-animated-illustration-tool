@@ -1,0 +1,115 @@
+
+#--------------------------------------------------
+# Code chunks
+
+<py/code-01>
+sliders = {
+    "value": {
+        "slider1": [5, 10, 25, 50, 100],
+        "slider2": [0.2, 0.4, 0.6, 0.8],
+    },
+    "initialIndex": [2, 2],
+    "sliderValueParStr": ['n', 'p'],
+    "slider_header": ['Sample size \(n\)', 'Probability of <br> success \(p\)'],
+    "button_header": ['Animate \(n\)', 'Animate \(p\)'],
+    "slider_value_max": ['4', '3'],
+    "slider_value": ['2', '2'],
+}
+figures = {
+    "tab_name": ['<em>plot-01</em>', '<em>plot-02</em>', '<em>plot-03</em>'],
+    "tab_header": ['<em>plot-01-header</em>', '<em>plot-02-header</em>', '<em>plot-03-header</em>'],
+}
+<code-01/py>
+
+#--------------------------------------------------
+# Text chunks
+
+<html/title>
+Title of the module
+<title/html>
+
+<html/header-01>
+This is the first level header
+<header-01/html>
+
+<html/header-02>
+This is the second level header
+<header-02/html>
+
+<html/topic-01>
+<p>This module is about...</p>
+<p>Futhermore,...</p>
+<topic-01/html>
+
+<html/tab-text-01>
+<p>The figure shows...</p>
+<tab-text-01/html>
+
+<html/tab-text-02>
+<p>The figure shows...</p>
+<tab-text-02/html>
+
+<html/tab-text-03>
+<p>The figure shows...</p>
+<tab-text-03/html>
+
+<html/illustration>
+<p>Change the parameters and see the effect...</p>
+<illustration/html>
+
+<html/more-details-header-01>
+More details header
+<more-details-header-01/html>
+
+<html/more-details-content-01>
+<p>Add more details here...</p>
+<more-details-content-01/html>
+
+<html/back-to-start-page>
+<a href="https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/index.html"><em>Back to Startpage</em></a>
+<back-to-start-page/html>
+
+
+
+#--------------------------------------------------
+# Audio text chunks
+
+<html/audio-text-figure-01-overall>
+Figure one shows...
+<audio-text-figure-01-overall/html>
+
+<html/audio-text-figure-01-slider-01>
+Changing slider one...
+<audio-text-figure-01-slider-01/html>
+
+<html/audio-text-figure-01-slider-02>
+Changing slider two...
+<audio-text-figure-01-slider-02/html>
+
+# ...
+
+<html/audio-text-figure-02-overall>
+Figure two shows...
+<audio-text-figure-02-overall/html>
+
+<html/audio-text-figure-02-slider-01>
+Changing slider one...
+<audio-text-figure-02-slider-01/html>
+
+<html/audio-text-figure-02-slider-02>
+Changing slider two...
+<audio-text-figure-02-slider-02/html>
+
+# ...
+
+<html/audio-text-figure-03-overall>
+Figure three shows...
+<audio-text-figure-03-overall/html>
+
+<html/audio-text-figure-03-slider-01>
+Changing slider one...
+<audio-text-figure-03-slider-01/html>
+
+<html/audio-text-figure-03-slider-02>
+Changing slider two...
+<audio-text-figure-03-slider-02/html>
