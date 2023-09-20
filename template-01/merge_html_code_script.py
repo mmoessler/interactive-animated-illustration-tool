@@ -20,6 +20,7 @@ for chunk in html_chunks:
     end_marker = f"<{chunk}/html>"
     html_block = txt_content.split(start_marker)[1].split(end_marker)[0]
     html_content = html_content.replace(f"<em> {chunk} </em>", html_block)
+    html_content = html_content.replace(f"<span> {chunk} </span>", html_block) # for audio
 
 # Write the modified HTML content back to the file
 with open('./template-01/html_template_02.html', 'w') as output_file:
