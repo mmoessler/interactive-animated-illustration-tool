@@ -89,7 +89,21 @@
                 
                 <div style='margin-top: 50px;'>
                                     
-                  <!-- include-sliders -->
+                  <hr>
+        <p style='font-size: 12pt; text-align: center;'>Sample size \(n\)</p>
+        <p style='font-size: 12pt; text-align: center' class='sliderValueCl' id='sliderValue1Id'></p>
+        <input class='sliderCl' id='slider1Id' type='text' data-slider-min='0' data-slider-max='4' data-slider-step='1' data-slider-value='2'/>
+        <div style='font-size: 12pt; text-align: center;'>
+            <button class='animateButtonCl' id='1' onclick='animateButtonClick(slider = 1)'>Animate \(n\)</button>
+        </div>
+    <br>
+        <p style='font-size: 12pt; text-align: center;'>Probability of <br> success \(p\)</p>
+        <p style='font-size: 12pt; text-align: center' class='sliderValueCl' id='sliderValue2Id'></p>
+        <input class='sliderCl' id='slider2Id' type='text' data-slider-min='0' data-slider-max='3' data-slider-step='1' data-slider-value='2'/>
+        <div style='font-size: 12pt; text-align: center;'>
+            <button class='animateButtonCl' id='2' onclick='animateButtonClick(slider = 2)'>Animate \(p\)</button>
+        </div>
+    
 
                 </div>
                 
@@ -101,13 +115,82 @@
                 
                 <div class="tab" style="text-align: center;">
 
-                  <!-- include-tabs -->
+                  
+            <button class="tabLinkL1Cl" onclick="openSpecificTab('tabContentL1N1Id', 'tabLinkL1N1Id', 'white')" id="tabLinkL1N1Id">
+            <em>plot-01</em>
+            </button>
+        
+            <button class="tabLinkL1Cl" onclick="openSpecificTab('tabContentL1N2Id', 'tabLinkL1N2Id', 'white')" id="tabLinkL1N2Id">
+            <em>plot-02</em>
+            </button>
+        
+            <button class="tabLinkL1Cl" onclick="openSpecificTab('tabContentL1N3Id', 'tabLinkL1N3Id', 'white')" id="tabLinkL1N3Id">
+            <em>plot-03</em>
+            </button>
+        
 
                 </div>
                 
                 <hr>
                 
-                <!-- include-figures -->
+                
+            <div id="tabContentL1N1Id" class="tabContentL1Cl">
+            <table style="width:100%; margin-bottom: 10px;">
+            <tr>
+            <td style="width: 10%"></td>
+            <td style="width: 80%; font-size: 14pt; text-align: left;">
+            <em>plot-01-header</em>
+            </td>
+            <td style="width: 10%; font-size: 14pt; text-align: right;">
+            <button class="explainButtonCl" onclick="explainButtonClick()">Explain</button>
+            </td>
+            </tr>
+            </table>
+            <div style="text-align: center;">
+            <img src="./figures/figure_01.svg" alt="" class="figureCl" id="figure1Id" style="max-width: 75%;">
+            </div>                                        
+            <p class="audioShowTextCl" id="audioShowTextFigure1Id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
+            <em> tab-text-01 </em>                  
+            </div>
+        
+            <div id="tabContentL1N2Id" class="tabContentL1Cl">
+            <table style="width:100%; margin-bottom: 10px;">
+            <tr>
+            <td style="width: 10%"></td>
+            <td style="width: 80%; font-size: 14pt; text-align: left;">
+            <em>plot-02-header</em>
+            </td>
+            <td style="width: 10%; font-size: 14pt; text-align: right;">
+            <button class="explainButtonCl" onclick="explainButtonClick()">Explain</button>
+            </td>
+            </tr>
+            </table>
+            <div style="text-align: center;">
+            <img src="./figures/figure_02.svg" alt="" class="figureCl" id="figure2Id" style="max-width: 75%;">
+            </div>                                        
+            <p class="audioShowTextCl" id="audioShowTextFigure2Id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
+            <em> tab-text-02 </em>                  
+            </div>
+        
+            <div id="tabContentL1N3Id" class="tabContentL1Cl">
+            <table style="width:100%; margin-bottom: 10px;">
+            <tr>
+            <td style="width: 10%"></td>
+            <td style="width: 80%; font-size: 14pt; text-align: left;">
+            <em>plot-03-header</em>
+            </td>
+            <td style="width: 10%; font-size: 14pt; text-align: right;">
+            <button class="explainButtonCl" onclick="explainButtonClick()">Explain</button>
+            </td>
+            </tr>
+            </table>
+            <div style="text-align: center;">
+            <img src="./figures/figure_03.svg" alt="" class="figureCl" id="figure3Id" style="max-width: 75%;">
+            </div>                                        
+            <p class="audioShowTextCl" id="audioShowTextFigure3Id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
+            <em> tab-text-03 </em>                  
+            </div>
+        
                 
               </div>
               
@@ -149,7 +232,43 @@
   <!-- Collections of audio text -->
   <div style="display: none;">
 
-    <!-- include-audio-text -->
+    
+            <div id="audioTextFigure1OverallId" class="audioTextCl">
+                <span> audio-text-figure-01-overall </span>
+            </div>
+        
+                <div id="audioTextFigure1Slider1Id" class="audioTextCl">          
+                    <span> audio-text-figure-01-slider-01 </span>
+                </div>
+            
+                <div id="audioTextFigure1Slider2Id" class="audioTextCl">          
+                    <span> audio-text-figure-01-slider-02 </span>
+                </div>
+            
+            <div id="audioTextFigure2OverallId" class="audioTextCl">
+                <span> audio-text-figure-02-overall </span>
+            </div>
+        
+                <div id="audioTextFigure2Slider1Id" class="audioTextCl">          
+                    <span> audio-text-figure-02-slider-01 </span>
+                </div>
+            
+                <div id="audioTextFigure2Slider2Id" class="audioTextCl">          
+                    <span> audio-text-figure-02-slider-02 </span>
+                </div>
+            
+            <div id="audioTextFigure3OverallId" class="audioTextCl">
+                <span> audio-text-figure-03-overall </span>
+            </div>
+        
+                <div id="audioTextFigure3Slider1Id" class="audioTextCl">          
+                    <span> audio-text-figure-03-slider-01 </span>
+                </div>
+            
+                <div id="audioTextFigure3Slider2Id" class="audioTextCl">          
+                    <span> audio-text-figure-03-slider-02 </span>
+                </div>
+            
 
   </div>
     
@@ -209,7 +328,22 @@
   <!-- adjust inputs -->
   <script>  
         
-    // code-01 //
+    var sliders = {
+    'value': {
+        'slider1': [5, 10, 25, 50, 100],
+        'slider2': [0.2, 0.4, 0.6, 0.8],
+    },
+    'initialIndex': [2, 2],
+    'sliderValueParStr': ['n', 'p'],
+    'slider_header': ['Sample size \(n\)', 'Probability of <br> success \(p\)'],
+    'button_header': ['Animate \(n\)', 'Animate \(p\)'],
+    'slider_value_max': ['4', '3'],
+    'slider_value': ['2', '2'],
+}
+var figures = {
+    'tab_name': ['<em>plot-01</em>', '<em>plot-02</em>', '<em>plot-03</em>'],
+    'tab_header': ['<em>plot-01-header</em>', '<em>plot-02-header</em>', '<em>plot-03-header</em>'],
+}
 
   </script>
 
