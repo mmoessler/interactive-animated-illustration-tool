@@ -83,11 +83,11 @@ def generate_audio_text(n_figures, n_sliders):
     return tag
 
 # Read the content of the .txt file
-with open('./template-01/input_chunks.txt', 'r') as txt_file:
+with open('input_chunks.txt', 'r') as txt_file:
     txt_content = txt_file.read()
 
 # Read the content of the .html file
-with open('./template-01/html_template_00.html', 'r') as html_file:
+with open('html_template_00.html', 'r') as html_file:
     html_content = html_file.read()
 
 # Use regular expressions to find all python code chunks
@@ -130,5 +130,5 @@ js_block = js_block.replace("figures =", "var figures =")
 html_content = html_content.replace(f"// {chunk} //", js_block)
 
 # Write the modified HTML content back to the file
-with open('./template-01/html_template_01.html', 'w') as output_file:
+with open('html_template_01.html', 'w') as output_file:
     output_file.write(html_content)
