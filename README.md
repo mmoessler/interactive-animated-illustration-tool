@@ -10,6 +10,16 @@ https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/index.h
 
 ```
 
+## Approach
+
+We created an empty *html* template (`html_template_00.html`) you can use as starting point.
+
+To adjust the template for your illustration you have to (1) add your sliders and figures handling and (2) your explanations and interpretations.
+
+We created an *txt* file (`input_chunks.txt`) where you can add the properties of your sliders and figures and your explanations and interpretations.
+
+
+
 ## Content
 
 ### Working with the Template
