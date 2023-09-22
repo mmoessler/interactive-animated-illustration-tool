@@ -88,33 +88,6 @@ $$
 <p>gets closer to the standard normal distribution \(N\left(0, 1\right)\).</p>
 <tab-text-03/html>
 
-<html/more-details-header-01>
-Construction of \(z_{\overline{Y}}\)
-<more-details-header-01/html>
-
-<html/more-details-content-01>
-<p style="margin-top: 10px;">
-For the construction of the standardized sample average \(z_{\overline{Y}}\), the mean \(\mu\) as well as the variance \(\sigma^{2}\) are used.
-</p>
-<p>For the continuous uniform distribution the mean is given by,</p>
-$$
-\begin{align}
-\mu=p,
-\end{align}
-$$ 
-<p>and the variance is given by,</p>
-$$
-\begin{align}
-\sigma^{2}=p\left(1-p\right),
-\end{align}
-$$          
-<p>where \(p\) is the probability of success of the Bernoulli distribution.</p>
-<more-details-content-01/html>
-
-<html/back-to-start-page>
-<a href="https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/index.html"><em>Back to Startpage</em></a>
-<back-to-start-page/html>
-
 
 
 #--------------------------------------------------
