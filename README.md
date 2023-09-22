@@ -18,7 +18,31 @@ To adjust the template for your illustration you have to (1) add your sliders an
 
 We created an *txt* file (`input_chunks.txt`) where you can add the properties of your sliders and figures and your explanations and interpretations.
 
+## Structure input chunks
 
+Customize the content in the chunks in the file `input_chunks.txt`.
+
+Customize the content in the *python code chunk*
+
+- ...
+- ...
+
+Customize the content in the *html code chunks* for the text
+
+- `<html/title> ... <title/html>`: Add a title
+- `<html/header-01> ... <header-01/html>`: Add a level one header
+- `<html/header-02> ... <header-02/html>`: Add a level two header
+- `<html/topic-01> ... <topic-01/html>`: Add a description of the topic of the illustration
+- `<html/illustration> ... <illustration/html>`: Add a description of the illustration
+- `<html/tab-text-01> ... <tab-text-01/html>`: Add a description under figure one
+- `<html/tab-text-02> ... <tab-text-02/html>`: Add a description under figure two
+- `<html/tab-text-03> ... <tab-text-03/html>`: Add a description under figure three
+- ...
+
+Customize the content in the *html code chunks* for the audio text
+
+- ...
+- ...
 
 ## Content
 
