@@ -2,11 +2,11 @@
 
 ## Introduction
 
-This is a template to create an illustration tool similar to,
+This is a template to create an illustration tool such as,
 
 ```
 
-https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/index.html
+https://raw.githack.com/mmoessler/interactive-animated-illustration-tool/main/example-01/html_template_xx.html
 
 ```
 
@@ -24,10 +24,53 @@ Customize the content in the chunks in the file `input_chunks.txt`.
 
 Customize the content in the *python code chunk*
 
-- ...
-- ...
+````
 
-Customize the content in the *html code chunks* for the text
+sliders = {
+    "value": {
+        "slider1": [5, 10, 25, 50, 100],
+        "slider2": [0.2, 0.4, 0.6, 0.8],
+    },
+    "initialIndex": [2, 2],
+    "sliderValueParStr": ['n', 'p'],
+    "slider_header": ['Sample size \(n\)', 'Probability of <br> success \(p\)'],
+    "button_header": ['Animate \(n\)', 'Animate \(p\)'],
+    "slider_value_max": ['4', '3'],
+    "slider_value": ['2', '2'],
+}
+figures = {
+    "tab_name": ['<em>plot-01</em>', '<em>plot-02</em>', '<em>plot-03</em>'],
+    "tab_header": ['<em>plot-01-header</em>', '<em>plot-02-header</em>', '<em>plot-03-header</em>'],
+}
+
+````
+
+Add your *slider* and *figure* specification.
+
+The information are collected in the following two dictionaries:
+
+ - `sliders`: Dictionary containing the specifcation of the sliders
+ - `figures`: Dictionary containing the specification of the figures
+ 
+Customize the *values* of the following *keys* of the `sliders` dictionary:
+
+- `value`: Nested dictionary with the array of values displayed for each slider
+  - `slider1`: Array of values displayed for slider 1
+  - ...
+  - `sliderX`: Array of values displayed for slider X
+- `initialIndex`: Array with length equal to the number of sliders containing the initial position/index for the slider. Note, index starts with 0!
+- `sliderValueParStr`: Array with length equal to the number of sliders containing the character strings displayed for each slider value
+- `slider_header`: Array with length equal to the number of sliders containing the character strings displayed for each slider
+- `button_header`: Array with length equal to the number of sliders containing the character strings dispclayed on the animate button for each slider
+- `slider_value_max`: Array with length equal to the number of sldiers containing the maximum position/index for each slider. Note, index starts with 0! 
+- `slider_value`: Array with length equal to the number of sliders containing the initial position/index for the slider. Note, index starts with 0!
+
+Customize the *values* of the following *keys* of the `figures` dictionary:
+
+- `tab_name`: Array with length equal to the number of figures containing the character strings displayed on the tab button for each figure
+- `tab_header`: Array with length equal to the number of figures containing the character strings displayed as header for each figure
+
+Customize the content in the *html code chunks*:
 
 - `<html/title> ... <title/html>`: Add a title
 - `<html/header-01> ... <header-01/html>`: Add a level one header
@@ -41,10 +84,37 @@ Customize the content in the *html code chunks* for the text
 
 Customize the content in the *html code chunks* for the audio text
 
+- figure 1
+  - `<html/audio-text-figure-01-overall> ... <audio-text-figure-01-overall/html>`: Add the audio text for the overall explanation of figure one
+  - `<html/audio-text-figure-01-slider-01> ... <audio-text-figure-01-slider-01/html>`: Add the audio text for the explanation of the effect of changing the underlying parameter of slider one for figure one
+  - `<html/audio-text-figure-01-slider-02> ... <audio-text-figure-01-slider-02/html>`: Add the audio text for the explanation of the effect of changing the underlying parameter of slider two for figure one
+  - ...
+  - `<html/audio-text-figure-01-slider-0X> ... <audio-text-figure-01-slider-0X/html>`: Add the audio text for the explanation of the effect of changing the underlying parameter of slider X for figure one
+- figure 2
+  - `<html/audio-text-figure-02-overall> ... <audio-text-figure-02-overall/html>`: Add the audio text for the overall explanation of figure two
+  - `<html/audio-text-figure-02-slider-01> ... <audio-text-figure-02-slider-01/html>`: Add the audio text for the explanation of the effect of changing the underlying parameter of slider two for figure two
+  - `<html/audio-text-figure-02-slider-02> ... <audio-text-figure-02-slider-02/html>`: Add the audio text for the explanation of the effect of changing the underlying parameter of slider two for figure two
+  - ...
+  - `<html/audio-text-figure-02-slider-0X> ... <audio-text-figure-02-slider-0X/html>`: Add the audio text for the explanation of the effect of changing the underlying parameter of slider X for figure two
 - ...
-- ...
+- figure X
+  - `<html/audio-text-figure-0X-overall> ... <audio-text-figure-0X-overall/html>`: Add the audio text for the overall explanation of figure X
+  - `<html/audio-text-figure-0X-slider-01> ... <audio-text-figure-0X-slider-01/html>`: Add the audio text for the explanation of the effect of changing the underlying parameter of slider one for figure X
+  - `<html/audio-text-figure-0X-slider-02> ... <audio-text-figure-0X-slider-02/html>`: Add the audio text for the explanation of the effect of changing the underlying parameter of slider two for figure X
+  - ...
+  - `<html/audio-text-figure-0X-slider-0X> ... <audio-text-figure-0X-slider-0X/html>`: Add the audio text for the explanation of the effect of changing the underlying parameter of slider X for figure X
 
-## Content
+Add your audio text seperated using `<span></span>` tags such as
+
+````
+<html/audio-text-figure-01-slider-01>
+    <span> Changing the parameter X results in Y ... </span>
+    <span> Moreover, ...</span>
+<audio-text-figure-01-slider-01/html>
+
+````
+
+<!-- ## Content
 
 ### Working with the Template
 
@@ -66,9 +136,7 @@ Changing or adding Text Chunks or Audio text Chunks works similarly.
 
 ## Steps
 
-...
-
-
+... -->
 
 ## Licence
 
