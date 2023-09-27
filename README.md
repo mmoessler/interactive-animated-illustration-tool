@@ -58,7 +58,7 @@ figures = {
 
 The information are collected in the following two dictionaries:
 
- - `sliders`: Dictionary containing the specifcation of the sliders
+ - `sliders`: Dictionary containing the specification of the sliders
  - `figures`: Dictionary containing the specification of the figures
  
 Customize the *values* of the following *keys* of the `sliders` dictionary:
@@ -70,8 +70,8 @@ Customize the *values* of the following *keys* of the `sliders` dictionary:
 - `initialIndex`: Array with length equal to the number of sliders containing the initial position/index for the slider. Note, index starts with 0!
 - `sliderValueParStr`: Array with length equal to the number of sliders containing the character strings displayed for each slider value
 - `slider_header`: Array with length equal to the number of sliders containing the character strings displayed for each slider
-- `button_header`: Array with length equal to the number of sliders containing the character strings dispclayed on the animate button for each slider
-- `slider_value_max`: Array with length equal to the number of sldiers containing the maximum position/index for each slider. Note, index starts with 0! 
+- `button_header`: Array with length equal to the number of sliders containing the character strings displayed on the animate button for each slider
+- `slider_value_max`: Array with length equal to the number of sliders containing the maximum position/index for each slider. Note, index starts with 0! 
 - `slider_value`: Array with length equal to the number of sliders containing the initial position/index for the slider. Note, index starts with 0!
 
 Customize the *values* of the following *keys* of the `figures` dictionary:
@@ -115,7 +115,7 @@ Customize the content in the *html code chunks* for the audio text:
   - ...
   - `<html/audio-text-figure-0X-slider-0X> ... <audio-text-figure-0X-slider-0X/html>`: Add the audio text for the explanation of the effect of changing the underlying parameter of slider X for figure X
 
-Add your audio text seperated using `<span></span>` tags such as
+Add your audio text separated using `<span></span>` tags such as
 
 ````
 <html/audio-text-figure-01-slider-01>
@@ -125,7 +125,6 @@ Add your audio text seperated using `<span></span>` tags such as
 
 ````
 
-#
 ## Licence
 
 This project is part of the [DeLLFi](https://www.uni-hohenheim.de/en/project-dellfi) (Integrating digitalization along teaching, learning, and research) project of the University of Hohenheim and funded by [Foundation for Innovation in University Teaching](https://stiftung-hochschullehre.de/)
