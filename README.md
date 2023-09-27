@@ -1,8 +1,6 @@
 # interactive-animated-illustration-tool
 
-## Introduction
-
-This is a template to create an illustration tool such as,
+This repository contains a template to create an *interactive and animated illustration tool* such as,
 
 ```
 
@@ -10,17 +8,28 @@ https://raw.githack.com/mmoessler/interactive-animated-illustration-tool/main/ex
 
 ```
 
-## Approach
+## Steps
 
-We created an empty *html* template (`html_template_00.html`) you can use as starting point.
+1) Download and unzip or clone this repository.
+2) Move into the subdirectory `template-01`.
+3) Generate and store your figures for the illustration in the subdirectory `figures`. See explanation of the *figure naming convention* below.
+4) Customize the content of the `input_chunks.txt` file. See the explanation of the *input chunks* below.
+5) Execute the python script `merge_script_py` to generate the final `html_template_xx.html` file with the interactive animated illustration.
+6) Feel free to change the name of the folder, i.e., `template-01`, and of the final html file, i.e., `html_template_xx.html`. 
 
-To adjust the template for your illustration you have to (1) add your sliders and figures handling and (2) your explanations and interpretations.
+## Explanations
 
-We created an *txt* file (`input_chunks.txt`) where you can add the properties of your sliders and figures and your explanations and interpretations.
+## Figure naming convention
 
-## Structure input chunks
+1) Choose the number of figures you want to use for your illustration. Use the following naming convention for the number of figures `figure_01_`, `figure_02_`,... `figure_0X_` for `X` figures.
+2) Choose the number of sliders or parameters you want to use for your illustration. For each slider add another index of the slider or parameter value separated by `_`, e.g., for two figures and two sliders use, `figure_01_x_y`, `figure_02_x_y` where `x` and `y` are the index of the slider or parameter value. 
+* Choose the number of slider values or parameter values of each slider or parameter. For example for two figure and two sliders where the first slider has three values and the second slider has four values you should have the following figures.
+  * `figure_01_1_1`, `figure_01_2_1`, `figure_01_3_1`, `figure_01_1_2`; `figure_01_2_2`, `figure_01_3_2`, `figure_01_1_3`, `figure_01_2_3`, `figure_01_3_3`, `figure_01_1_4`, `figure_01_2_4`, `figure_01_3_4`
+  * `figure_02_1_1`, `figure_02_2_1`, `figure_02_3_1`, `figure_02_1_2`; `figure_02_2_2`, `figure_02_3_2`, `figure_02_1_3`, `figure_02_2_3`, `figure_02_3_3`, `figure_02_1_4`, `figure_02_2_4`, `figure_02_3_4`
+  
+## Input chunks
 
-Customize the content in the chunks in the file `input_chunks.txt`.
+### *html code chunks*
 
 Customize the content in the *python code chunk*
 
@@ -70,6 +79,8 @@ Customize the *values* of the following *keys* of the `figures` dictionary:
 - `tab_name`: Array with length equal to the number of figures containing the character strings displayed on the tab button for each figure
 - `tab_header`: Array with length equal to the number of figures containing the character strings displayed as header for each figure
 
+### *html code chunks*
+
 Customize the content in the *html code chunks*:
 
 - `<html/title> ... <title/html>`: Add a title
@@ -82,7 +93,7 @@ Customize the content in the *html code chunks*:
 - `<html/tab-text-03> ... <tab-text-03/html>`: Add a description under figure three
 - ...
 
-Customize the content in the *html code chunks* for the audio text
+Customize the content in the *html code chunks* for the audio text:
 
 - figure 1
   - `<html/audio-text-figure-01-overall> ... <audio-text-figure-01-overall/html>`: Add the audio text for the overall explanation of figure one
@@ -114,30 +125,7 @@ Add your audio text seperated using `<span></span>` tags such as
 
 ````
 
-<!-- ## Content
-
-### Working with the Template
-
-1. Create a folder named "figures" with all the figures that you want to use
-2. Open the input_chunks.txt file - Each Section starts with e.g., <py/NAME> and ends with e.g., <NAME/py>
-3. Change the content in each section accordingly and save the input_chunks.txt file
-4. Run the merge_script.py file. A html_output file is created.
-
-#### Example: Adding an additional slider 
-
-1. Under slider, add a new slider with labels and values in the following form: "slider1": [1, 2, 3],
-2. The "initialIndex" function sets the initial index position of the slider when they are first displayed. Note, that the first index value is counted from 0. If we want to display the value 2 as default, we would need to set the index value to 1.
-3. Next, add the labels for the slider and the button, which are displayed in the final file
-4. Now, enter the index of the last slider input value you defined previously in Step 1 under slider_value_max. 
-5. Enter the index of the default value you want to display. 
-6. Save the input_chunks.txt file and run the merge_script.py file.
-
-Changing or adding Text Chunks or Audio text Chunks works similarly.
-
-## Steps
-
-... -->
-
+#
 ## Licence
 
 This project is part of the [DeLLFi](https://www.uni-hohenheim.de/en/project-dellfi) (Integrating digitalization along teaching, learning, and research) project of the University of Hohenheim and funded by [Foundation for Innovation in University Teaching](https://stiftung-hochschullehre.de/)
