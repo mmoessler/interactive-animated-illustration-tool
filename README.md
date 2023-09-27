@@ -11,11 +11,11 @@ https://raw.githack.com/mmoessler/interactive-animated-illustration-tool/main/ex
 ## Steps
 
 1) Download and unzip or clone this repository.
-2) Move into the subdirectory `template-01`.
-3) Generate and store your figures for the illustration in the subdirectory `figures`. See explanation of the *figure naming convention* below.
-4) Customize the content of the `input_chunks.txt` file. See the explanation of the *input chunks* below.
-5) Execute the python script `merge_script_py` to generate the final `html_template_xx.html` file with the interactive animated illustration.
-6) Feel free to change the name of the folder, i.e., `template-01`, and of the final html file, i.e., `html_template_xx.html`. 
+2) Move into the subdirectory `./template-01`.
+3) Generate and store your figures for the illustration in the subdirectory `./template-01/figures`. See explanation of the *figure naming convention* below.
+4) Customize the content of the `./template-01/input_chunks.txt` file. See the explanation of the *input chunks* below.
+5) Execute the python script `./template-01/merge_script_py` to generate the final `./template-01/html_template_xx.html` file with the interactive animated illustration.
+6) Feel free to change the name of the folder, i.e., `./template-01`, and of the final html file, i.e., `./template-01/html_template_xx.html`. 
 
 ## Explanations
 
@@ -23,7 +23,7 @@ https://raw.githack.com/mmoessler/interactive-animated-illustration-tool/main/ex
 
 1) Choose the number of figures you want to use for your illustration. Use the following naming convention for the number of figures `figure_01_`, `figure_02_`,... `figure_0X_` for `X` figures.
 2) Choose the number of sliders or parameters you want to use for your illustration. For each slider add another index of the slider or parameter value separated by `_`, e.g., for two figures and two sliders use, `figure_01_x_y`, `figure_02_x_y` where `x` and `y` are the index of the slider or parameter value. 
-* Choose the number of slider values or parameter values of each slider or parameter. For example for two figure and two sliders where the first slider has three values and the second slider has four values you should have the following figures.
+3) Choose the number of slider values or parameter values of each slider or parameter. For example for two figure and two sliders where the first slider has three values and the second slider has four values you should have the following figures.
   * `figure_01_1_1`, `figure_01_2_1`, `figure_01_3_1`, `figure_01_1_2`; `figure_01_2_2`, `figure_01_3_2`, `figure_01_1_3`, `figure_01_2_3`, `figure_01_3_3`, `figure_01_1_4`, `figure_01_2_4`, `figure_01_3_4`
   * `figure_02_1_1`, `figure_02_2_1`, `figure_02_3_1`, `figure_02_1_2`; `figure_02_2_2`, `figure_02_3_2`, `figure_02_1_3`, `figure_02_2_3`, `figure_02_3_3`, `figure_02_1_4`, `figure_02_2_4`, `figure_02_3_4`
   
