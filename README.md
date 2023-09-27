@@ -54,7 +54,7 @@ figures = {
 
 ````
 
-Add your *slider* and *figure* specification.
+<!-- Add your *slider* and *figure* specification. -->
 
 The information are collected in the following two dictionaries:
 
