@@ -1,6 +1,6 @@
 
 # import modules
-import resliderValueCl
+import re
 
 #--------------------------------------------------
 # STEP 1: Include python code chunks
@@ -34,7 +34,7 @@ def generate_tabs(figures):
     # loop over figures
     for ii in range(len(figures["tab_name"])):
         tag = tag + f"""
-            <button class="tab-link-l1-cl" onclick="openSpecificTab('tabContentL1N{ii+1}Id', 'tabLinkL1N{ii+1}Id', 'white')" id="tabLinkL1N{ii+1}Id">
+            <button class="tab-link-l1-cl" onclick="openSpecificTab('tab-content-l1-n{ii+1}-id', 'tab-link-l1-n{ii+1}-id', 'white')" id="tab-link-l1-n{ii+1}-id">
             {figures["tab_name"][ii]}
             </button>
         """
@@ -46,7 +46,7 @@ def generate_figures(figures):
     # loop over figures
     for ii in range(len(figures["tab_header"])):
         tag = tag + f"""
-            <div id="tabContentL1N{ii+1}Id" class="tab-content-l1-cl">
+            <div id="tab-content-l1-n{ii+1}-id" class="tab-content-l1-cl">
             <table style="width:100%; margin-bottom: 10px;">
             <tr>
             <td style="width: 10%"></td>
@@ -61,7 +61,7 @@ def generate_figures(figures):
             <div style="text-align: center;">
             <img src="./figures/figure_0{ii+1}.svg" alt="" class="figure-cl" id="figure{ii+1}Id" style="max-width: 75%;">
             </div>                                        
-            <p class="audio-show-text-cl" id="audioShowTextFigure{ii+1}Id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
+            <p class="audio-show-text-cl" id="audio-show-text-figure-{ii+1}-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
             <em> tab-text-0{ii+1} </em>                  
             </div>
         """
@@ -73,14 +73,14 @@ def generate_audio_text(n_figures, n_sliders):
     # loop over figures
     for ii in range(n_figures):
         tag = tag + f"""
-            <div id="audioTextFigure{ii+1}OverallId" class="audio-text-cl">
+            <div id="audio-text-figure-{ii+1}-overall-id" class="audio-text-cl">
                 <span> audio-text-figure-0{ii+1}-overall </span>
             </div>
         """
         # loop over sliders
         for jj in range(n_sliders):
             tag = tag + f"""
-                <div id="audioTextFigure{ii+1}Slider{jj+1}Id" class="audio-text-cl">          
+                <div id="audio-text-figure-{ii+1}-slider{jj+1}-id" class="audio-text-cl">          
                     <span> audio-text-figure-0{ii+1}-slider-0{jj+1} </span>
                 </div>
             """
