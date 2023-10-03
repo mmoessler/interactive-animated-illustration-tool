@@ -14,7 +14,7 @@ https://raw.githack.com/mmoessler/interactive-animated-illustration-tool/main/ex
 2) Move into the subdirectory `./template-01`.
 3) Generate and store your figures for the illustration in the subdirectory `./template-01/figures`. See explanation of the *figure naming convention* below.
 4) Customize the content of the `./template-01/input_chunks.txt` file. See the explanation of the *input chunks* below.
-5) Execute the python script `./template-01/merge_script_py` to generate the final `./template-01/html_template_xx.html` file with the interactive animated illustration.
+5) Execute the python script `./assets/merge_script_py` to generate the final `./template-01/html_template_xx.html` file with the interactive animated illustration.
 6) Feel free to change the name of the folder, i.e., `./template-01`, and of the final html file, i.e., `./template-01/html_template_xx.html`. 
 
 ## Explanations
