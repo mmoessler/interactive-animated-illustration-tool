@@ -10,8 +10,8 @@ import re
 def generate_inner_slider(slider_header, button_header, slider_id, slider_value_id, slider_value_max, slider_value, button_id):
     tag = f"""
         <p style='font-size: 12pt; text-align: center;'>{slider_header}</p>
-        <p style='font-size: 12pt; text-align: center' class='slider-value-cl' id='sliderValue{slider_value_id}Id'></p>
-        <input class='slider-cl' id='slider{slider_id}Id' type='text' data-slider-min='0' data-slider-max='{slider_value_max}' data-slider-step='1' data-slider-value='{slider_value}'/>
+        <p style='font-size: 12pt; text-align: center' class='slider-value-cl' id='slider-value-{slider_value_id}-id'></p>
+        <input class='slider-cl' id='slider-{slider_id}-id' type='text' data-slider-min='0' data-slider-max='{slider_value_max}' data-slider-step='1' data-slider-value='{slider_value}'/>
         <div style='font-size: 12pt; text-align: center;'>
             <button class='animate-button-cl' id='{button_id}' onclick='animateButtonClick(slider = {slider_id})'>{button_header}</button>
         </div>
@@ -80,7 +80,7 @@ def generate_audio_text(n_figures, n_sliders):
         # loop over sliders
         for jj in range(n_sliders):
             tag = tag + f"""
-                <div id="audio-text-figure-{ii+1}-slider{jj+1}-id" class="audio-text-cl">          
+                <div id="audio-text-figure-{ii+1}-slider-{jj+1}-id" class="audio-text-cl">          
                     <span> audio-text-figure-0{ii+1}-slider-0{jj+1} </span>
                 </div>
             """
