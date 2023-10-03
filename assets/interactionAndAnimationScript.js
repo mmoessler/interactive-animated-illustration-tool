@@ -2,28 +2,28 @@
 //..................................................
 
 // collect all tab content ids
-let tabContentAll = document.getElementsByClassName('tabContentL1Cl');
+let tabContentAll = document.getElementsByClassName('tab-content-l1-cl');
 let tabContentIds = [];
 for (let i = 0; i < tabContentAll.length; i++) {
   tabContentIds.push(tabContentAll[i].id);
 }
 
 // collect all figure ids
-let figureAll = document.getElementsByClassName('figureCl');
+let figureAll = document.getElementsByClassName('figure-cl');
 let figureIds = [];
 for (let i = 0; i < figureAll.length; i++) {
   figureIds.push(figureAll[i].id);
 }
 
 // collect slider ids
-let sliderAll = document.getElementsByClassName('sliderCl');
+let sliderAll = document.getElementsByClassName('slider-cl');
 let sliderIds = [];
 for (let i = 0; i < sliderAll.length; i++) {
   sliderIds.push(sliderAll[i].id);
 }
 
 // collect slider value ids
-let sliderValueAll = document.getElementsByClassName('sliderValueCl');
+let sliderValueAll = document.getElementsByClassName('slider-value-cl');
 let sliderValueIds = [];
 for (let i = 0; i < sliderValueAll.length; i++) {
   sliderValueIds.push(sliderValueAll[i].id);
@@ -93,8 +93,8 @@ explainButtonClick = function() {
     tab++;
   }
   
-  let audioShowTextIdTmp = 'audioShowTextFigure' + tab + 'Id'; // construct show text id
-  let audioTextIdTmp = 'audioTextFigure' + tab + 'OverallId'; // construct audio text id
+  let audioShowTextIdTmp = 'audio-show-text-figure-' + tab + '-id'; // construct show text id
+  let audioTextIdTmp = 'audio-text-figure-' + tab + '-overall-id'; // construct audio text id
   
   var audioTextDiv = document.getElementById(audioTextIdTmp); // get show text
   var audioTextSpa = audioTextDiv.getElementsByTagName("span");
@@ -146,8 +146,8 @@ animateButtonClick = function(slider) {
     tab++;
   }
     
-  let audioShowTextIdTmp = 'audioShowTextFigure' + tab + 'Id'; // construct show text id
-  let audioTextIdTmp = 'audioTextFigure' + tab + 'Slider' + slider + 'Id'; // construct audio text id
+  let audioShowTextIdTmp = 'audio-show-text-figure-' + tab + '-id'; // construct show text id
+  let audioTextIdTmp = 'audio-text-figure-' + tab + '-slider-' + slider + '-id'; // construct audio text id
     
   var audioTextDiv = document.getElementById(audioTextIdTmp); // get show text
   var audioTextSpa = audioTextDiv.getElementsByTagName("span");
