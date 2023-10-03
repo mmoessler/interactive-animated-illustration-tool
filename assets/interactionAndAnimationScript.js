@@ -74,8 +74,6 @@ updateFiguresAndSliderValues = function() {
     }
     document.getElementById(figureIds[i]).setAttribute("src", figurePathTmp.concat('.svg'));
 
-    console.log(figurePathTmp);
-
   }
 }
 
@@ -148,7 +146,7 @@ animateButtonClick = function(slider) {
     
   let audioShowTextIdTmp = 'audio-show-text-figure-' + tab + '-id'; // construct show text id
   let audioTextIdTmp = 'audio-text-figure-' + tab + '-slider-' + slider + '-id'; // construct audio text id
-    
+  
   var audioTextDiv = document.getElementById(audioTextIdTmp); // get show text
   var audioTextSpa = audioTextDiv.getElementsByTagName("span");
   var audioShowPar = document.getElementById(audioShowTextIdTmp); // get audio text
