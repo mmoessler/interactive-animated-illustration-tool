@@ -115,7 +115,7 @@ html_content = html_content.replace(f"<!-- include-tabs -->", generate_tabs(figu
 html_content = html_content.replace(f"<!-- include-figures -->", generate_figures(figures = figures))
 # add slider tags
 html_content = html_content.replace(f"<!-- include-sliders -->", generate_outer_slider(sliders = sliders))
-# agg audio tags
+# add audio tags
 html_content = html_content.replace(f"<!-- include-audio-text -->", generate_audio_text(n_figures=len(figures["tab_name"]), n_sliders=len(sliders["value"])))
 
 # transform python to javascript and insert
