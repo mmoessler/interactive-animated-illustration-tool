@@ -2,8 +2,8 @@
 //..............................
 // handling of collapsibles
 // see: https://www.w3schools.com/howto/howto_js_collapsible.asp
-var coll = document.getElementsByClassName("coll-button-cl");
-var i;
+let coll = document.getElementsByClassName("coll-button-cl");
+let i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
@@ -21,23 +21,23 @@ for (i = 0; i < coll.length; i++) {
 // handling of tabs      
 // see: https://www.w3schools.com/howto/howto_js_tabs.asp
 
-var activeTabId; // define as global variable
+let activeTabId; // define as global variable
 activeTabId = "tab-link-l1-n1-id";
 
 // open specific tab
 function openSpecificTab(tabContentId, tabLinkId, color) {
 
   // hide all elements with class="tab-content-l1" by default */
-  var i, tabcontent, tablinks;
+  let i, tabcontent, tablinks;
 
   tabcontent = document.getElementsByClassName("tab-content-l1-cl");
-  for (i = 0; i < tabcontent.length; i++) {
+  for (let i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
 
   // remove the background color of all tablinks/buttons
   tablinks = document.getElementsByClassName("tab-link-l1-cl");
-  for (i = 0; i < tablinks.length; i++) {
+  for (let i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = "";
   }
 
