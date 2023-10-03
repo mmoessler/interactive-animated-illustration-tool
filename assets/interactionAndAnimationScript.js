@@ -34,7 +34,7 @@ for (let i = 0; i < sliderValueAll.length; i++) {
 // initialize sliders for all sliders
 for (var i = 0; i < sliderIds.length; i++) {
   eval(
-    'var slider' + (i + 1) + ' = new Slider("#slider' + (i + 1) + 'Id", { \n tooltip: "never", \n formatter: function(value) { \n return sliders.value.slider' + (i + 1) + '[value] \n } \n })'
+    'var slider' + (i + 1) + ' = new Slider("#slider-' + (i + 1) + '-id", { \n tooltip: "never", \n formatter: function(value) { \n return sliders.value.slider' + (i + 1) + '[value] \n } \n })'
   );
 }
 
