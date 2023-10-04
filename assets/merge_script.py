@@ -29,7 +29,7 @@ def generate_inner_slider(slider_header, button_header, slider_id, slider_value_
         <p style='font-size: 12pt; text-align: center' class='slider-value-cl' id='slider-value-{slider_value_id}-id'></p>
         <input class='slider-cl' id='slider-{slider_id}-id' type='text' data-slider-min='0' data-slider-max='{slider_value_max}' data-slider-step='1' data-slider-value='{slider_value}'/>
         <div style='font-size: 12pt; text-align: center;'>
-            <button class='animate-button-cl' id='{button_id}' onclick='animateButtonClick(slider = {slider_id})'>{button_header}</button>
+            <button class='animate-button-cl' id='animate-button-{button_id}-id' onclick='animateButtonClick(slider = {slider_id})'>{button_header}</button>
         </div>
     """
     return tag
