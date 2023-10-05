@@ -1,6 +1,22 @@
 
 # import modules
 import re
+import os
+import warnings
+
+#--------------------------------------------------
+# STEP 0: Input path to folder to render
+#--------------------------------------------------
+
+# To suppress all warnings:
+warnings.filterwarnings("ignore")
+# SyntaxWarning invalid escape sequence '\('
+
+print('Enter the path of the module:')
+path = input()
+print('You entered the path: ' + path) 
+
+os.chdir(path)
 
 #--------------------------------------------------
 # STEP 1: Include python code chunks
@@ -10,10 +26,10 @@ import re
 def generate_inner_slider(slider_header, button_header, slider_id, slider_value_id, slider_value_max, slider_value, button_id):
     tag = f"""
         <p style='font-size: 12pt; text-align: center;'>{slider_header}</p>
-        <p style='font-size: 12pt; text-align: center' class='sliderValueCl' id='sliderValue{slider_value_id}Id'></p>
-        <input class='sliderCl' id='slider{slider_id}Id' type='text' data-slider-min='0' data-slider-max='{slider_value_max}' data-slider-step='1' data-slider-value='{slider_value}'/>
+        <p style='font-size: 12pt; text-align: center' class='slider-value-cl' id='slider-value-{slider_value_id}-id'></p>
+        <input class='slider-cl' id='slider-{slider_id}-id' type='text' data-slider-min='0' data-slider-max='{slider_value_max}' data-slider-step='1' data-slider-value='{slider_value}'/>
         <div style='font-size: 12pt; text-align: center;'>
-            <button class='animateButtonCl' id='{button_id}' onclick='animateButtonClick(slider = {slider_id})'>{button_header}</button>
+            <button class='animate-button-cl' id='{button_id}' onclick='animateButtonClick(slider = {slider_id})'>{button_header}</button>
         </div>
     """
     return tag
@@ -34,7 +50,7 @@ def generate_tabs(figures):
     # loop over figures
     for ii in range(len(figures["tab_name"])):
         tag = tag + f"""
-            <button class="tabLinkL1Cl" onclick="openSpecificTab('tabContentL1N{ii+1}Id', 'tabLinkL1N{ii+1}Id', 'white')" id="tabLinkL1N{ii+1}Id">
+            <button class="tab-link-l1-cl" onclick="openSpecificTab('tab-content-l1-n{ii+1}-id', 'tab-link-l1-n{ii+1}-id', 'white')" id="tab-link-l1-n{ii+1}-id">
             {figures["tab_name"][ii]}
             </button>
         """
@@ -46,7 +62,7 @@ def generate_figures(figures):
     # loop over figures
     for ii in range(len(figures["tab_header"])):
         tag = tag + f"""
-            <div id="tabContentL1N{ii+1}Id" class="tabContentL1Cl">
+            <div id="tab-content-l1-n{ii+1}-id" class="tab-content-l1-cl">
             <table style="width:100%; margin-bottom: 10px;">
             <tr>
             <td style="width: 10%"></td>
@@ -54,14 +70,14 @@ def generate_figures(figures):
             {figures["tab_header"][ii]}
             </td>
             <td style="width: 10%; font-size: 14pt; text-align: right;">
-            <button class="explainButtonCl" onclick="explainButtonClick()">Explain</button>
+            <button class="explain-button-cl" onclick="explainButtonClick()">Explain</button>
             </td>
             </tr>
             </table>
             <div style="text-align: center;">
-            <img src="./figures/figure_0{ii+1}.svg" alt="" class="figureCl" id="figure{ii+1}Id" style="max-width: 75%;">
+            <img src="./figures/figure_0{ii+1}.svg" alt="" class="figure-cl" id="figure{ii+1}Id" style="max-width: 75%;">
             </div>                                        
-            <p class="audioShowTextCl" id="audioShowTextFigure{ii+1}Id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
+            <p class="audio-show-text-cl" id="audio-show-text-figure-{ii+1}-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
             <em> tab-text-0{ii+1} </em>                  
             </div>
         """
@@ -73,14 +89,14 @@ def generate_audio_text(n_figures, n_sliders):
     # loop over figures
     for ii in range(n_figures):
         tag = tag + f"""
-            <div id="audioTextFigure{ii+1}OverallId" class="audioTextCl">
+            <div id="audio-text-figure-{ii+1}-overall-id" class="audio-text-cl">
                 <span> audio-text-figure-0{ii+1}-overall </span>
             </div>
         """
         # loop over sliders
         for jj in range(n_sliders):
             tag = tag + f"""
-                <div id="audioTextFigure{ii+1}Slider{jj+1}Id" class="audioTextCl">          
+                <div id="audio-text-figure-{ii+1}-slider-{jj+1}-id" class="audio-text-cl">          
                     <span> audio-text-figure-0{ii+1}-slider-0{jj+1} </span>
                 </div>
             """
@@ -115,8 +131,8 @@ html_content = html_content.replace(f"<!-- include-tabs -->", generate_tabs(figu
 html_content = html_content.replace(f"<!-- include-figures -->", generate_figures(figures = figures))
 # add slider tags
 html_content = html_content.replace(f"<!-- include-sliders -->", generate_outer_slider(sliders = sliders))
-# agg audio tags
-html_content = html_content.replace(f"<!-- include-audio-text -->", generate_audio_text(n_figures=3, n_sliders=len(sliders["value"])))
+# add audio tags
+html_content = html_content.replace(f"<!-- include-audio-text -->", generate_audio_text(n_figures=len(figures["tab_name"]), n_sliders=len(sliders["value"])))
 
 # transform python to javascript and insert
 chunk = "code-01"

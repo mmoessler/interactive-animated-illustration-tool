@@ -61,41 +61,41 @@ This is the second level header
 # Audio text chunks
 
 <html/audio-text-figure-01-overall>
-Figure one shows...
+<span>Figure one shows...</span>
 <audio-text-figure-01-overall/html>
 
 <html/audio-text-figure-01-slider-01>
-Changing slider one...
+<span>Changing slider one...</span>
 <audio-text-figure-01-slider-01/html>
 
 <html/audio-text-figure-01-slider-02>
-Changing slider two...
+<span>Changing slider two...</span>
 <audio-text-figure-01-slider-02/html>
 
 # ...
 
 <html/audio-text-figure-02-overall>
-Figure two shows...
+<span>Figure two shows...</span>
 <audio-text-figure-02-overall/html>
 
 <html/audio-text-figure-02-slider-01>
-Changing slider one...
+<span>Changing slider one...</span>
 <audio-text-figure-02-slider-01/html>
 
 <html/audio-text-figure-02-slider-02>
-Changing slider two...
+<span>Changing slider two...</span>
 <audio-text-figure-02-slider-02/html>
 
 # ...
 
 <html/audio-text-figure-03-overall>
-Figure three shows...
+<span>Figure three shows...</span>
 <audio-text-figure-03-overall/html>
 
 <html/audio-text-figure-03-slider-01>
-Changing slider one...
+<span>Changing slider one...</span>
 <audio-text-figure-03-slider-01/html>
 
 <html/audio-text-figure-03-slider-02>
-Changing slider two...
+<span>Changing slider two...</span>
 <audio-text-figure-03-slider-02/html>
