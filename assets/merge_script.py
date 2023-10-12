@@ -78,7 +78,7 @@ def generate_figures(figures):
             <img src="./figures/figure_0{ii+1}.svg" alt="" class="figure-cl" id="figure{ii+1}Id" style="max-width: 75%;">
             </div>                                        
             <p class="audio-show-text-cl" id="audio-show-text-figure-{ii+1}-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
-            <em> tab-text-0{ii+1} </em>                  
+            <div><em> tab-text-0{ii+1} </em></div>
             </div>
         """
     return tag
