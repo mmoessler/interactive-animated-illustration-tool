@@ -137,15 +137,7 @@ Change the parameters and see the effect on the shape of the pdf and cdf of the 
                 
                 <div class="tab" style="text-align: center;">
 
-                  
-            <button class="tab-link-l1-cl" onclick="openSpecificTab('tab-content-l1-n1-id', 'tab-link-l1-n1-id', 'white')" id="tab-link-l1-n1-id">
-            PDF
-            </button>
-        
-            <button class="tab-link-l1-cl" onclick="openSpecificTab('tab-content-l1-n2-id', 'tab-link-l1-n2-id', 'white')" id="tab-link-l1-n2-id">
-            CDF
-            </button>
-        
+                  <!-- include-tabs -->
 
                 </div>
                 
@@ -157,7 +149,7 @@ Change the parameters and see the effect on the shape of the pdf and cdf of the 
             <tr>
             <td style="width: 10%"></td>
             <td style="width: 80%; font-size: 14pt; text-align: left;">
-            Probabilty Density Function
+            Probability Density Function
             </td>
             <td style="width: 10%; font-size: 14pt; text-align: right;">
             <button class="explain-button-cl" onclick="explainButtonClick()">Explain</button>
@@ -168,26 +160,6 @@ Change the parameters and see the effect on the shape of the pdf and cdf of the 
             <img src="./figures/figure_01.svg" alt="" class="figure-cl" id="figure1Id" style="max-width: 75%;">
             </div>                                        
             <p class="audio-show-text-cl" id="audio-show-text-figure-1-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
-            <div>
-</div>
-            </div>
-        
-            <div id="tab-content-l1-n2-id" class="tab-content-l1-cl">
-            <table style="width:100%; margin-bottom: 10px;">
-            <tr>
-            <td style="width: 10%"></td>
-            <td style="width: 80%; font-size: 14pt; text-align: left;">
-            Cumulative Probability Density Function
-            </td>
-            <td style="width: 10%; font-size: 14pt; text-align: right;">
-            <button class="explain-button-cl" onclick="explainButtonClick()">Explain</button>
-            </td>
-            </tr>
-            </table>
-            <div style="text-align: center;">
-            <img src="./figures/figure_02.svg" alt="" class="figure-cl" id="figure2Id" style="max-width: 75%;">
-            </div>                                        
-            <p class="audio-show-text-cl" id="audio-show-text-figure-2-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
             <div>
 </div>
             </div>
@@ -209,42 +181,6 @@ Change the parameters and see the effect on the shape of the pdf and cdf of the 
   <div style="display: none;">
 
     
-            <div id="audio-text-figure-1-overall-id" class="audio-text-cl">
-                
-<span>The figure shows the pdf of the normal distribution for the choosen parameters.</span>
-
-            </div>
-        
-                <div id="audio-text-figure-1-slider-1-id" class="audio-text-cl">          
-                    
-<span>Changing the location parameter shifts the pdf of the normal distribution. </span>
-
-                </div>
-            
-                <div id="audio-text-figure-1-slider-2-id" class="audio-text-cl">          
-                    
-<span>Changing the scale parameter compresses and expands the pdf of the normal distribution.</span>
-
-                </div>
-            
-            <div id="audio-text-figure-2-overall-id" class="audio-text-cl">
-                
-<span>The figure shows the cdf of the normal distribution for the choosen parameters.</span>
-
-            </div>
-        
-                <div id="audio-text-figure-2-slider-1-id" class="audio-text-cl">          
-                    
-<span>Changing the location parameter compresses and expands the cdf of the normal distribution.</span>
-
-                </div>
-            
-                <div id="audio-text-figure-2-slider-2-id" class="audio-text-cl">          
-                    
-<span>Changing the scale parameter compresses and expands the cdf of the normal distribution.</span>
-
-                </div>
-            
 
   </div>
     
@@ -305,8 +241,8 @@ Change the parameters and see the effect on the shape of the pdf and cdf of the 
     'slider_value': ['2', '2'],
 }
 var figures = {
-    'tab_name': ['PDF', 'CDF'],
-    'tab_header': ['Probabilty Density Function', 'Cumulative Probability Density Function'],
+    'tab_name': [],
+    'tab_header': ['Probability Density Function'],
 }
 
   </script>
