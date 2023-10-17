@@ -16,8 +16,8 @@ sliders = {
     "slider_value": ['2', '2'],
 }
 figures = {
-    "tab_name": ['PDF', 'CDF'],
-    "tab_header": ['Probabilty Density Function', 'Cumulative Probability Density Function'],
+    "tab_name": [],
+    "tab_header": ['Probability Density Function'],
 }
 <code-01/py>
 
@@ -78,15 +78,3 @@ Change the parameters and see the effect on the shape of the pdf and cdf of the 
 <html/audio-text-figure-01-slider-02>
 <span>Changing the scale parameter compresses and expands the pdf of the normal distribution.</span>
 <audio-text-figure-01-slider-02/html>
-
-<html/audio-text-figure-02-overall>
-<span>The figure shows the cdf of the normal distribution for the choosen parameters.</span>
-<audio-text-figure-02-overall/html>
-
-<html/audio-text-figure-02-slider-01>
-<span>Changing the location parameter compresses and expands the cdf of the normal distribution.</span>
-<audio-text-figure-02-slider-01/html>
-
-<html/audio-text-figure-02-slider-02>
-<span>Changing the scale parameter compresses and expands the cdf of the normal distribution.</span>
-<audio-text-figure-02-slider-02/html>
