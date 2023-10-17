@@ -101,18 +101,18 @@ This is the second level header
                 <div style='margin-top: 50px;'>
                                     
                   <hr>
-        <p style='font-size: 12pt; text-align: center;'>Sample size \(n\)</p>
+        <p style='font-size: 12pt; text-align: center;'>Index Parameter 1</p>
         <p style='font-size: 12pt; text-align: center' class='slider-value-cl' id='slider-value-1-id'></p>
         <input class='slider-cl' id='slider-1-id' type='text' data-slider-min='0' data-slider-max='4' data-slider-step='1' data-slider-value='2'/>
         <div style='font-size: 12pt; text-align: center;'>
-            <button class='animate-button-cl' onclick='animateButtonClick(slider = 1)'>Animate \(n\)</button>
+            <button class='animate-button-cl' id='animate-button-1-id' onclick='animateButtonClick(slider = 1)'>Animate \(i_{1}\)</button>
         </div>
     <br>
-        <p style='font-size: 12pt; text-align: center;'>Probability of <br> success \(p\)</p>
+        <p style='font-size: 12pt; text-align: center;'>Index Parameter 2</p>
         <p style='font-size: 12pt; text-align: center' class='slider-value-cl' id='slider-value-2-id'></p>
-        <input class='slider-cl' id='slider-2-id' type='text' data-slider-min='0' data-slider-max='3' data-slider-step='1' data-slider-value='2'/>
+        <input class='slider-cl' id='slider-2-id' type='text' data-slider-min='0' data-slider-max='4' data-slider-step='1' data-slider-value='2'/>
         <div style='font-size: 12pt; text-align: center;'>
-            <button class='animate-button-cl' onclick='animateButtonClick(slider = 2)'>Animate \(p\)</button>
+            <button class='animate-button-cl' id='animate-button-2-id' onclick='animateButtonClick(slider = 2)'>Animate \(i_{2}\)</button>
         </div>
     
 
@@ -161,9 +161,9 @@ This is the second level header
             <img src="./figures/figure_01.svg" alt="" class="figure-cl" id="figure1Id" style="max-width: 75%;">
             </div>                                        
             <p class="audio-show-text-cl" id="audio-show-text-figure-1-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
-            
+            <div>
 <p>The figure shows...</p>
-                  
+</div>
             </div>
         
             <div id="tab-content-l1-n2-id" class="tab-content-l1-cl">
@@ -182,9 +182,9 @@ This is the second level header
             <img src="./figures/figure_02.svg" alt="" class="figure-cl" id="figure2Id" style="max-width: 75%;">
             </div>                                        
             <p class="audio-show-text-cl" id="audio-show-text-figure-2-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
-            
+            <div>
 <p>The figure shows...</p>
-                  
+</div>
             </div>
         
             <div id="tab-content-l1-n3-id" class="tab-content-l1-cl">
@@ -203,9 +203,9 @@ This is the second level header
             <img src="./figures/figure_03.svg" alt="" class="figure-cl" id="figure3Id" style="max-width: 75%;">
             </div>                                        
             <p class="audio-show-text-cl" id="audio-show-text-figure-3-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
-            
+            <div>
 <p>The figure shows...</p>
-                  
+</div>
             </div>
         
                 
@@ -328,14 +328,14 @@ This is the second level header
         
     var sliders = {
     'value': {
-        'slider1': [5, 10, 25, 50, 100],
-        'slider2': [0.2, 0.4, 0.6, 0.8],
+        'slider1': [1, 2, 3, 4, 5],
+        'slider2': [1, 2, 3, 4, 5],
     },
     'initialIndex': [2, 2],
-    'sliderValueParStr': ['n', 'p'],
-    'slider_header': ['Sample size \(n\)', 'Probability of <br> success \(p\)'],
-    'button_header': ['Animate \(n\)', 'Animate \(p\)'],
-    'slider_value_max': ['4', '3'],
+    'sliderValueParStr': ['i_{1}', 'i_{2}'],
+    'slider_header': ['Index Parameter 1', 'Index Parameter 2'],
+    'button_header': ['Animate \(i_{1}\)', 'Animate \(i_{2}\)'],
+    'slider_value_max': ['4', '4'],
     'slider_value': ['2', '2'],
 }
 var figures = {

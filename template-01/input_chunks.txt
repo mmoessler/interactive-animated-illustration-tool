@@ -5,14 +5,14 @@
 <py/code-01>
 sliders = {
     "value": {
-        "slider1": [5, 10, 25, 50, 100],
-        "slider2": [0.2, 0.4, 0.6, 0.8],
+        "slider1": [1, 2, 3, 4, 5],
+        "slider2": [1, 2, 3, 4, 5],
     },
     "initialIndex": [2, 2],
-    "sliderValueParStr": ['n', 'p'],
-    "slider_header": ['Sample size \(n\)', 'Probability of <br> success \(p\)'],
-    "button_header": ['Animate \(n\)', 'Animate \(p\)'],
-    "slider_value_max": ['4', '3'],
+    "sliderValueParStr": ['i_{1}', 'i_{2}'],
+    "slider_header": ['Index Parameter 1', 'Index Parameter 2'],
+    "button_header": ['Animate \(i_{1}\)', 'Animate \(i_{2}\)'],
+    "slider_value_max": ['4', '4'],
     "slider_value": ['2', '2'],
 }
 figures = {
