@@ -12,6 +12,14 @@ https://raw.githack.com/mmoessler/interactive-illustration-tool/main/example-03/
 
 ```
 
+The raw template looks like
+
+```
+
+https://raw.githack.com/mmoessler/interactive-illustration-tool/main/template-01/html_template_xx.html
+
+```
+
 ## Steps
 
 1) Download and unzip or clone this repository.
