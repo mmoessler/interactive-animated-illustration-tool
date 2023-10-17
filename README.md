@@ -1,6 +1,16 @@
 # interactive-illustration-tool
 
-This repository contains a template to create an *interactive illustration tool* such as,
+This repository contains a template to create an *interactive illustration tool*
+
+The raw template looks like this,
+
+```
+
+https://raw.githack.com/mmoessler/interactive-illustration-tool/main/template-01/html_template_xx.html
+
+```
+
+Examples based on the template look like this,
 
 ```
 
@@ -9,14 +19,6 @@ https://raw.githack.com/mmoessler/interactive-illustration-tool/main/example-01/
 https://raw.githack.com/mmoessler/interactive-illustration-tool/main/example-02/html_template_xx.html
 
 https://raw.githack.com/mmoessler/interactive-illustration-tool/main/example-03/html_template_xx.html
-
-```
-
-The raw template looks like
-
-```
-
-https://raw.githack.com/mmoessler/interactive-illustration-tool/main/template-01/html_template_xx.html
 
 ```
 
