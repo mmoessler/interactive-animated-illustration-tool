@@ -1,10 +1,14 @@
-# interactive-animated-illustration-tool
+# interactive-illustration-tool
 
-This repository contains a template to create an *interactive and animated illustration tool* such as,
+This repository contains a template to create an *interactive illustration tool* such as,
 
 ```
 
-https://raw.githack.com/mmoessler/interactive-animated-illustration-tool/main/example-01/html_template_xx.html
+https://raw.githack.com/mmoessler/interactive-illustration-tool/main/example-01/html_template_xx.html
+
+https://raw.githack.com/mmoessler/interactive-illustration-tool/main/example-02/html_template_xx.html
+
+https://raw.githack.com/mmoessler/interactive-illustration-tool/main/example-03/html_template_xx.html
 
 ```
 
