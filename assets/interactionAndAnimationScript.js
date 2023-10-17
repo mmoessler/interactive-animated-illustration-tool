@@ -83,12 +83,23 @@ updateFiguresAndSliderValues();
 // explain figure
 explainButtonClick = function() {
   
-  let tabEqual = false;
-  let tab = 0;
-  while (tabEqual==false) {
-    tabEqual = activeTabId == tabContentIds[tab];
-    tab++;
+  if (figures.tab_name.length !== 0) {
+    let tabEqual = false;
+    var tab = 0;
+    while (tabEqual==false) {
+      tabEqual = activeTabId == tabContentIds[tab];
+      tab++;
+    }
+  }  else {
+    var tab = 1;
   }
+
+  // let tabEqual = false;
+  // let tab = 0;
+  // while (tabEqual==false) {
+  //   tabEqual = activeTabId == tabContentIds[tab];
+  //   tab++;
+  // }
   
   let audioShowTextIdTmp = 'audio-show-text-figure-' + tab + '-id'; // construct show text id
   let audioTextIdTmp = 'audio-text-figure-' + tab + '-overall-id'; // construct audio text id
@@ -136,16 +147,30 @@ explainButtonClick = function() {
 // animate slider
 animateButtonClick = function(slider) {
   
-  let tabEqual = false;
-  let tab = 0;
-  while (tabEqual==false) {
-    tabEqual = activeTabId == tabContentIds[tab];
-    tab++;
+  if (figures.tab_name.length !== 0) {
+    let tabEqual = false;
+    var tab = 0;
+    while (tabEqual==false) {
+      tabEqual = activeTabId == tabContentIds[tab];
+      tab++;
+    }
+    console.log("not equal zero")
+  } else {
+    var tab = 1;
   }
-    
+
+  // let tabEqual = false;
+  // let tab = 0;
+  // while (tabEqual==false) {
+  //   tabEqual = activeTabId == tabContentIds[tab];
+  //   tab++;
+  // }
+      
   let audioShowTextIdTmp = 'audio-show-text-figure-' + tab + '-id'; // construct show text id
   let audioTextIdTmp = 'audio-text-figure-' + tab + '-slider-' + slider + '-id'; // construct audio text id
   
+  console.log(audioTextIdTmp);
+
   let audioTextDiv = document.getElementById(audioTextIdTmp); // get show text
   let audioTextSpa = audioTextDiv.getElementsByTagName("span");
   let audioShowPar = document.getElementById(audioShowTextIdTmp); // get audio text
