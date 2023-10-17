@@ -134,7 +134,7 @@ html_content = html_content.replace(f"<!-- include-figures -->", generate_figure
 # add slider tags
 html_content = html_content.replace(f"<!-- include-sliders -->", generate_outer_slider(sliders = sliders))
 # add audio tags
-html_content = html_content.replace(f"<!-- include-audio-text -->", generate_audio_text(n_figures=len(figures["tab_name"]), n_sliders=len(sliders["value"])))
+html_content = html_content.replace(f"<!-- include-audio-text -->", generate_audio_text(n_figures=len(figures["tab_header"]), n_sliders=len(sliders["value"])))
 
 # transform python to javascript and insert
 chunk = "code-01"
