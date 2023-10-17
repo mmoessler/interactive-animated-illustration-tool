@@ -52,6 +52,9 @@ function openSpecificTab(tabContentId, tabLinkId, color) {
 }
 
 // set start page
-document.getElementById("tab-link-l1-n1-id").click();
+if (figures.tab_name.length !== 0) {
+  document.getElementById("tab-link-l1-n1-id").click();
+}
+
 // initialize figure and slider
 updateFiguresAndSliderValues();
