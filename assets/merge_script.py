@@ -52,13 +52,21 @@ def generate_tabs(figures):
         tag = tag + f"""
             <button class="tab-link-l1-cl" onclick="openSpecificTab('tab-content-l1-n{ii+1}-id', 'tab-link-l1-n{ii+1}-id', 'white')" id="tab-link-l1-n{ii+1}-id">
             {figures["tab_name"][ii]}
-            </button>
+            </button>            
         """
+    tag = tag + f"""
+    <hr>
+    """
     return tag
 
 # function to generate figures
 def generate_figures(figures):
-    tag = ""
+    if len(figures["tab_header"]) == 1:
+        tag = f"""
+            <br>
+        """
+    else: 
+        tag = ""    
     # loop over figures
     for ii in range(len(figures["tab_header"])):
         tag = tag + f"""
