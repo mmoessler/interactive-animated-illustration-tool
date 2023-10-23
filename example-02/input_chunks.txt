@@ -38,7 +38,7 @@ Parameters of the Normal Distribution
 
 <html/topic-01>
 
-Understand the effect of changing the "location parameter" \(\mu\) and the "scale parameter" \(\sigma\) on the shape of the probability density function (pdf) and the cumulative probability density function (cdf) of the normal distribution, i.e., for \(Y\) with,
+Understand the effect of changing the "<em>location parameter</em>" \(\mu\) and the "<em>scale parameter</em>" \(\sigma\) on the shape of the probability density function (pdf) and the cumulative probability density function (cdf) of the normal distribution, i.e., for \(Y\) with,
 
 $$
 \begin{align}
@@ -46,7 +46,7 @@ Y &\sim N\left(\mu, \sigma\right),
 \end{align}
 $$
 
-where \(\mu\) is the expected value, \(\text{E}\left(Y\right)\), or, the "location parameter", and \(\sigma\) is the standard deviation \(\sqrt{\text{Var}\left(Y\right)}\), or, the "scale parameter", of the normal distribution.
+where \(\mu\) is the expected value, \(\text{E}\left(Y\right)\), or, the "<em>location parameter</em>", and \(\sigma\) is the standard deviation \(\sqrt{\text{Var}\left(Y\right)}\), or, the "<em>scale parameter</em>", of the normal distribution.
 
 <topic-01/html>
 
