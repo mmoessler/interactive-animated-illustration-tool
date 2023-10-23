@@ -138,8 +138,11 @@
 <clipPath id="clip13">
   <path d="M 59.039063 29 L 473.757813 29 L 473.757813 31 L 59.039063 31 Z M 59.039063 29 "/>
 </clipPath>
+<clipPath id="clip14">
+  <path d="M 59.039063 29 L 473.757813 29 L 473.757813 416 L 59.039063 416 Z M 59.039063 29 "/>
+</clipPath>
 </defs>
-<g id="surface1306">
+<g id="surface381">
 <rect x="0" y="0" width="504" height="504" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
   <use xlink:href="#glyph0-1" x="12.960938" y="302.851563"/>
@@ -280,6 +283,8 @@
 <g clip-path="url(#clip13)" clip-rule="nonzero">
 <path style="fill:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(82.745098%,82.745098%,82.745098%);stroke-opacity:1;stroke-dasharray:0.75,2.25;stroke-miterlimit:10;" d="M 59.039063 29.8125 L 473.761719 29.8125 "/>
 </g>
-<path style="fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,39.215686%,0%);stroke-opacity:1;stroke-dasharray:6,6;stroke-miterlimit:10;" d="M 74.398438 415.148438 L 151.199219 415.148438 L 155.039063 415.144531 L 158.878906 415.085938 L 162.71875 411.988281 L 166.558594 370.804688 L 170.398438 222.480469 L 174.238281 74.152344 L 178.078125 32.972656 L 181.921875 29.875 L 185.761719 29.8125 L 458.398438 29.8125 "/>
+<g clip-path="url(#clip14)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,39.215686%,0%);stroke-opacity:1;stroke-dasharray:6,6;stroke-miterlimit:10;" d="M -149.601563 415.148438 L 151.199219 415.148438 L 157.601563 415.132813 L 164 406.378906 L 170.398438 222.480469 L 176.800781 38.578125 L 183.199219 29.824219 L 189.601563 29.8125 L 490.398438 29.8125 "/>
+</g>
 </g>
 </svg>
