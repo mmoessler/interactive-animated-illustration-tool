@@ -51,13 +51,21 @@ for (ii in 1:length(mu.vec)) {
     grid()
     
     # add standard normal density curve
-    curve(dnorm(x, mean = mu, sd = sig), -6, 6,
+    # curve(dnorm(x, mean = mu, sd = sig), -6, 6,
+    #       lty = 2,
+    #       lwd = 2, 
+    #       xlab = "", 
+    #       ylab = "",
+    #       add = TRUE,
+    #       col = "darkgreen")
+    curve(dnorm(x, mean = mu, sd = sig), -10+mu, 10+mu,
           lty = 2,
           lwd = 2, 
           xlab = "", 
           ylab = "",
           add = TRUE,
-          col = "darkgreen")
+          col = "darkgreen",
+          xlim = c(-6, 6))
     
     dev.off()
     
@@ -84,13 +92,21 @@ for (ii in 1:length(mu.vec)) {
     grid()
     
     # add standard normal density curve
-    curve(pnorm(x, mean = mu, sd = sig), -6, 6,
+    # curve(pnorm(x, mean = mu, sd = sig), -6, 6,
+    #       lty = 2,
+    #       lwd = 2, 
+    #       xlab = "", 
+    #       ylab = "",
+    #       add = TRUE,
+    #       col = "darkgreen")
+    curve(pnorm(x, mean = mu, sd = sig), -10+mu, 10+mu,
           lty = 2,
           lwd = 2, 
           xlab = "", 
           ylab = "",
           add = TRUE,
-          col = "darkgreen")
+          col = "darkgreen",
+          xlim = c(-6, 6))
     
     dev.off()
     
