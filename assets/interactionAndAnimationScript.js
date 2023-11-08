@@ -157,6 +157,7 @@ animateButtonClick = function(slider) {
     console.log("not equal zero")
   } else {
     var tab = 1;
+    console.log("equal zero")
   }
 
   // let tabEqual = false;
