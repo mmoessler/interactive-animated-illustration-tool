@@ -97,14 +97,14 @@
                       <div style='margin-top: 50px;'>
                         
                         <hr>
-                        <p style='font-size: 12pt; text-align: center;'>Header slider 1</p>
+                        <p style='font-size: 12pt; text-align: center;'>Parameter 1</p>
                         <p style='font-size: 12pt; text-align: center' class='slider-value-cl' id='slider-value-1-id'></p>
                         <input class='slider-cl' id='slider-1-id' type='text' data-slider-min='0' data-slider-max='4' data-slider-step='1' data-slider-value='2'/>
                         <div style='font-size: 12pt; text-align: center;'>
                           <button class='animate-button-cl' id='animate-button-1-id' onclick='animateButtonClick(slider = 1)'>Header button 1</button>
                         </div>
                         <br>
-                        <p style='font-size: 12pt; text-align: center;'>Header slider 2</p>
+                        <p style='font-size: 12pt; text-align: center;'>Parameter 2</p>
                         <p style='font-size: 12pt; text-align: center' class='slider-value-cl' id='slider-value-2-id'></p>
                         <input class='slider-cl' id='slider-2-id' type='text' data-slider-min='0' data-slider-max='4' data-slider-step='1' data-slider-value='2'/>
                         <div style='font-size: 12pt; text-align: center;'>
@@ -119,8 +119,16 @@
                   <div class="col-sm-9">
                     <div class="jumbotron inner-jumb-cl" style="padding: 15px 50px 25px 50px">
                       
-                      <br>
-                      
+                      <div class="tab" style="text-align: center;">                  
+                        <button class="tab-link-l1-cl" onclick="openSpecificTab('tab-content-l1-n1-id', 'tab-link-l1-n1-id', 'white')" id="tab-link-l1-n1-id">
+                          Header tab 1
+                        </button>
+                        <button class="tab-link-l1-cl" onclick="openSpecificTab('tab-content-l1-n2-id', 'tab-link-l1-n2-id', 'white')" id="tab-link-l1-n2-id">
+                          Header tab 2
+                        </button>
+                        <hr>                  
+                      </div>
+
                       <div id="tab-content-l1-n1-id" class="tab-content-l1-cl">
                         <table style="width:100%; margin-bottom: 10px;">
                           <tr>
@@ -141,6 +149,26 @@
                         </div>
                       </div>
                       
+                      <div id="tab-content-l1-n2-id" class="tab-content-l1-cl">
+                        <table style="width:100%; margin-bottom: 10px;">
+                          <tr>
+                            <td style="width: 10%"></td>
+                            <td style="width: 80%; font-size: 14pt; text-align: left;">
+                              Probability Density Function
+                            </td>
+                            <td style="width: 10%; font-size: 14pt; text-align: right;">
+                              <button class="explain-button-cl" onclick="explainButtonClick()">Explain</button>
+                            </td>
+                          </tr>
+                        </table>
+                        <div style="text-align: center;">
+                          <img src="./figures/figure_02.svg" alt="" class="figure-cl" id="figure2Id" style="max-width: 75%;">
+                        </div>                                        
+                        <p class="audio-show-text-cl" id="audio-show-text-figure-2-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
+                        <div>
+                        </div>
+                      </div>
+
                     </div>
                     
                   </div>
@@ -173,7 +201,25 @@
             <span>Insert the explanation of effect of slider 1 on figure 1 here!</span> <br>
             
           </div>      
+
+          <div id="audio-text-figure-2-overall-id" class="audio-text-cl">
+            
+            <span>Insert the overall explanation of figure 2 here!</span> <br>
+            
+          </div>
           
+          <div id="audio-text-figure-2-slider-1-id" class="audio-text-cl">          
+            
+            <span>Insert the explanation of effect of slider 1 on figure 2 here!</span> <br>
+            
+          </div>
+          
+          <div id="audio-text-figure-2-slider-2-id" class="audio-text-cl">          
+            
+            <span>Insert the explanation of effect of slider 1 on figure 2 here!</span> <br>
+            
+          </div>                
+
         </div>
             
         <!-- footer logos -->
@@ -236,8 +282,8 @@
 
       }
       var figures = {
-        'tab_name': [],
-        'tab_header': ['Probability Density Function'],
+        'tab_name': [1, 1],
+        'tab_header': ['header 1', 'header 2'],
       }
       
     </script>
