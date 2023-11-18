@@ -4,7 +4,7 @@
   
     <title>
       
-      ${title}
+      example 1
       
     </title>
     
@@ -86,7 +86,7 @@
                     <hr>
                     <div style='font-size: small; text-align: center;'>
                       <textarea rows="1" cols="1" id="slider-1-header-id" style="height: 30px; width: 100%;">Header slider 1</textarea>
-                      <textarea rows="1" cols="1" id="slider-1-parameter-id" style="height: 30px; width: 100%;">Parameter string 1</textarea>
+                      <textarea rows="1" cols="1" id="slider-1-parameter-id" style="height: 30px; width: 100%;">Parameter 1</textarea>
                       <table style="width: 100%; font-size: small;">
                         <tr>
                           <td style="width: 25%;">
@@ -111,7 +111,7 @@
                     <hr>
                     <div style='font-size: small; text-align: center;'>
                       <textarea rows="1" cols="1" id="slider-2-header-id" style="height: 30px; width: 100%;">Header slider 2</textarea>
-                      <textarea rows="1" cols="1" id="slider-2-parameter-id" style="height: 30px; width: 100%;">Parameter string 2</textarea>
+                      <textarea rows="1" cols="1" id="slider-2-parameter-id" style="height: 30px; width: 100%;">Parameter 2</textarea>
                       <table style="width: 100%; font-size: small;">
                         <tr>
                           <td style="width: 25%;">
@@ -151,7 +151,7 @@
                           <textarea rows="1" cols="1" id="slider-2-button-header-id" style="height: 30px; width: 100%;">Insert header of figure here!</textarea>
                         </td>
                         <td style="width: 10%; font-size: 14pt; text-align: right;">
-                          <button class="explain-button-cl" onclick="explainButtonClick()">Explain</button>
+                          <button class="explain-button-cl">Explain</button>
                         </td>
                       </tr>
                     </table>
@@ -258,17 +258,7 @@
     var audioTextFigure1Overall = generateAudioText( document.getElementById('audio-text-figure-1-overall-id').value );
     var audioTextFigure1Slider1 = generateAudioText( document.getElementById('audio-text-figure-1-slider-1-id').value );
     var audioTextFigure1Slider2 = generateAudioText( document.getElementById('audio-text-figure-1-slider-2-id').value );
-
-    // Split the content of the textarea into an array of lines
-    var lines = audioTextFigure1Overall.split('\n');
-    // console.log(lines);
-    var text = '';
-    // Iterate through the lines and create a new span for each line
-    for (var line of lines) {
-      var text = text + '<span>' + line + '</span>';
-    }
-    // console.log(text);
-
+    
     htmlFile = `
     <!doctype html>
     <html lang="eng">
@@ -426,8 +416,7 @@
         <!-- .................................................. -->
         <!-- Collections of audio text -->
         <div style="display: none;">
-          
-          
+                    
           <div id="audio-text-figure-1-overall-id" class="audio-text-cl">
             
             ${audioTextFigure1Overall}
