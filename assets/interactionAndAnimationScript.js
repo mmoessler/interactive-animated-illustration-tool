@@ -154,10 +154,10 @@ animateButtonClick = function(slider) {
       tabEqual = activeTabId == tabContentIds[tab];
       tab++;
     }
-    console.log("not equal zero")
+    //console.log("not equal zero")
   } else {
     var tab = 1;
-    console.log("equal zero")
+    //console.log("equal zero")
   }
 
   // let tabEqual = false;
@@ -170,7 +170,7 @@ animateButtonClick = function(slider) {
   let audioShowTextIdTmp = 'audio-show-text-figure-' + tab + '-id'; // construct show text id
   let audioTextIdTmp = 'audio-text-figure-' + tab + '-slider-' + slider + '-id'; // construct audio text id
   
-  console.log(audioTextIdTmp);
+  //console.log(audioTextIdTmp);
 
   let audioTextDiv = document.getElementById(audioTextIdTmp); // get show text
   let audioTextSpa = audioTextDiv.getElementsByTagName("span");
