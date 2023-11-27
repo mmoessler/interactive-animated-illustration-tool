@@ -161,7 +161,7 @@
                       <tr>
                         <td style="width: 10%"></td>
                         <td style="width: 80%; font-size: 14pt; text-align: left;">
-                          <textarea rows="1" cols="1" id="slider-2-button-header-id" style="height: 30px; width: 100%;">Insert header of figure 1 here!</textarea>
+                          <textarea rows="1" cols="1" id="figure-1-header-id" style="height: 30px; width: 100%;">Insert header of figure 1 here!</textarea>
                         </td>
                         <td style="width: 10%; font-size: 14pt; text-align: right;">
                           <button class="explain-button-cl">Explain</button>
@@ -169,12 +169,13 @@
                       </tr>
                     </table>
                     <div style="text-align: center;">
-                      <img src="./figures/figure_01.svg" alt="" class="figure-cl" id="figure1Id" style="max-width: 75%;">
+                      <img src="./figures/figure_01.svg" alt="" class="figure-cl" id="figure-1-id" style="max-width: 75%;">
 
                       <textarea rows="1" cols="1" id="tab-1-header-id" style="width: 100%;">Header tab 1</textarea>
-                      <textarea rows="1" cols="1" id="audio-text-figure-1-overall-id" style="width: 100%;">Insert the overall explanation of figure 1 here!</textarea>
-                      <textarea rows="1" cols="1" id="audio-text-figure-1-slider-1-id" style="width: 100%;">Insert the explanation of effect of slider 1 on figure 1 here!</textarea>
-                      <textarea rows="1" cols="1" id="audio-text-figure-1-slider-2-id" style="width: 100%;">Insert the explanation of effect of slider 1 on figure 1 here!</textarea>                      
+                      <textarea rows="1" cols="1" id="figure-1-explanation-id" style="width: 100%;">Insert the overall explanation of figure 1 here!</textarea>
+                      <textarea rows="1" cols="1" id="audio-text-figure-1-overall-id" style="width: 100%;">Insert the overall audio explanation of figure 1 here!</textarea>
+                      <textarea rows="1" cols="1" id="audio-text-figure-1-slider-1-id" style="width: 100%;">Insert the audio explanation of effect of slider 1 on figure 1 here!</textarea>
+                      <textarea rows="1" cols="1" id="audio-text-figure-1-slider-2-id" style="width: 100%;">Insert the audio explanation of effect of slider 1 on figure 1 here!</textarea>                      
 
                     </div>                                        
                       <p class="audio-show-text-cl" id="audio-show-text-figure-1-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
@@ -187,7 +188,7 @@
                       <tr>
                         <td style="width: 10%"></td>
                         <td style="width: 80%; font-size: 14pt; text-align: left;">
-                          <textarea rows="1" cols="1" id="slider-2-button-header-id" style="height: 30px; width: 100%;">Insert header of figure 2 here!</textarea>
+                          <textarea rows="1" cols="1" id="figure-2-header-id" style="height: 30px; width: 100%;">Insert header of figure 2 here!</textarea>
                         </td>
                         <td style="width: 10%; font-size: 14pt; text-align: right;">
                           <button class="explain-button-cl">Explain</button>
@@ -195,12 +196,13 @@
                       </tr>
                     </table>
                     <div style="text-align: center;">
-                      <img src="./figures/figure_02.svg" alt="" class="figure-cl" id="figure1Id" style="max-width: 75%;">
+                      <img src="./figures/figure_02.svg" alt="" class="figure-cl" id="figure-2-id" style="max-width: 75%;">
 
                       <textarea rows="1" cols="1" id="tab-2-header-id" style="width: 100%;">Header tab 2</textarea>
-                      <textarea rows="1" cols="1" id="audio-text-figure-2-overall-id" style="width: 100%;">Insert the overall explanation of figure 2 here!</textarea>
-                      <textarea rows="1" cols="1" id="audio-text-figure-2-slider-1-id" style="width: 100%;">Insert the explanation of effect of slider 1 on figure 2 here!</textarea>
-                      <textarea rows="1" cols="1" id="audio-text-figure-2-slider-2-id" style="width: 100%;">Insert the explanation of effect of slider 1 on figure 2 here!</textarea>                      
+                      <textarea rows="1" cols="1" id="figure-2-explanation-id" style="width: 100%;">Insert the overall explanation of figure 2 here!</textarea>
+                      <textarea rows="1" cols="1" id="audio-text-figure-2-overall-id" style="width: 100%;">Insert the overall audio explanation of figure 2 here!</textarea>
+                      <textarea rows="1" cols="1" id="audio-text-figure-2-slider-1-id" style="width: 100%;">Insert the audio explanation of effect of slider 1 on figure 2 here!</textarea>
+                      <textarea rows="1" cols="1" id="audio-text-figure-2-slider-2-id" style="width: 100%;">Insert the audio explanation of effect of slider 1 on figure 2 here!</textarea>                      
 
                     </div>                                        
                       <p class="audio-show-text-cl" id="audio-show-text-figure-2-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
@@ -323,6 +325,12 @@
 
     var slider1ParamterStr = document.getElementById('slider-1-parameter-id').value;
     var slider2ParamterStr = document.getElementById('slider-2-parameter-id').value;
+
+    var figure1Header = document.getElementById('figure-1-header-id').value;
+    var figure2Header = document.getElementById('figure-2-header-id').value;
+
+    var figure1Explanation = document.getElementById('figure-1-explanation-id').value;
+    var figure2Explanation = document.getElementById('figure-2-explanation-id').value;
 
     var audioTextFigure1Overall = generateAudioText( document.getElementById('audio-text-figure-1-overall-id').value );
     var audioTextFigure1Slider1 = generateAudioText( document.getElementById('audio-text-figure-1-slider-1-id').value );
@@ -471,7 +479,7 @@
                           <tr>
                             <td style="width: 10%"><\/td>
                             <td style="width: 80%; font-size: 14pt; text-align: left;">
-                              Probability Density Function
+                              ${figure1Header}
                             <\/td>
                             <td style="width: 10%; font-size: 14pt; text-align: right;">
                               <button class="explain-button-cl" onclick="explainButtonClick()">Explain<\/button>
@@ -479,11 +487,10 @@
                           <\/tr>
                         <\/table>
                         <div style="text-align: center;">
-                          <img src=".\/figures\/figure_01.svg" alt="" class="figure-cl" id="figure1Id" style="max-width: 75%;">
+                          <img src=".\/figures\/figure_01.svg" alt="" class="figure-cl" id="figure-1-id" style="max-width: 75%;">
                         <\/div>                                        
                         <p class="audio-show-text-cl" id="audio-show-text-figure-1-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"><\/p>
-                        <div>
-                        <\/div>
+                        ${figure1Explanation}
                       <\/div>
                       
                       <div id="tab-content-l1-n2-id" class="tab-content-l1-cl">
@@ -491,7 +498,7 @@
                           <tr>
                             <td style="width: 10%"><\/td>
                             <td style="width: 80%; font-size: 14pt; text-align: left;">
-                              Probability Density Function
+                              ${figure2Header}
                             <\/td>
                             <td style="width: 10%; font-size: 14pt; text-align: right;">
                               <button class="explain-button-cl" onclick="explainButtonClick()">Explain<\/button>
@@ -499,11 +506,10 @@
                           <\/tr>
                         <\/table>
                         <div style="text-align: center;">
-                          <img src=".\/figures\/figure_02.svg" alt="" class="figure-cl" id="figure2Id" style="max-width: 75%;">
+                          <img src=".\/figures\/figure_02.svg" alt="" class="figure-cl" id="figure-2-id" style="max-width: 75%;">
                         <\/div>                                        
                         <p class="audio-show-text-cl" id="audio-show-text-figure-2-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"><\/p>
-                        <div>
-                        <\/div>
+                        ${figure2Explanation}
                       <\/div>
 
                     <\/div>
