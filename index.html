@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="eng">
+  <head>
+
+    <title>Illustration Tool</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
+
+    <!-- include my style sheet -->
+    <link rel="stylesheet" href="./assets/mystyle.css">
+
+    <style>
+      .access-ilias-cl{
+        display: none;
+      }
+      .access-github-cl{
+        display: block;
+      }
+    </style>
+
+    <!-- logo -->
+    <div class="logo-cl header-01-cl" style="text-align:center; padding-top: 20px; padding-bottom: 20px;" background-color="#eeeeee;">
+      <img src="./assets/RZ_UniHohenheim_Logo_1C_Weiss_EN.svg" height="250px"/>
+    </div>
+
+  </head>
+  <body>
+
+    <div class="container mt-5">
+      <div class="row">
+
+        <div class="jumbotron top-jumb-cl" style="margin-top: 50px; padding: 25px 50px 25px 50px;">
+
+          <p style="font-size: 28pt; text-align: center">Interactive and Animated <br> Illustration Tool</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+
+        <div class="jumbotron" style="padding: 25px 50px 25px 50px">
+
+          <p style="font-size: 18pt">Motivation</p>
+
+          <div style="margin-left: 20px;">
+
+            <p>...</p>
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+
+        <div class="jumbotron" style="padding: 25px 50px 25px 50px">
+
+          <p style="font-size: 18pt">Example</p>
+
+          <div style="margin-left: 20px;">
+          
+            <p>...</p>
+
+          </div>                    
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+
+        <div class="jumbotron" style="padding: 25px 50px 25px 50px">
+
+          <p style="font-size: 18pt">Templates</p>
+
+          <div style="margin-left: 20px;">
+          
+            <p>...</p>
+
+            <div>
+
+              <table style="width: 50%; margin: auto;">
+                <tr>
+                  <td>
+                    <label for="sliders">Choose the number of sliders:</label>
+                  </td>
+                  <td>
+                    <select id="sliders" style="width: 100px;">
+                      <option value="2" selected>2 sliders</option>
+                      <!-- Add more options as needed -->
+                    </select>
+                  </td>
+                  <td rowspan="2">
+                    <button onclick="goToTemplate()">Submit</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="figures">Choose the number of figures:</label>
+                  </td>
+                  <td>      
+                    <select id="figures" style="width: 100px;">
+                      <option value="1" selected>1 figure</option>
+                      <option value="2">2 figures</option>
+                      <!-- Add more options as needed -->
+                    </select>
+                  </td>    
+                </tr>
+              </table>
+              
+            </div>
+
+          </div>                    
+
+        </div>
+      </div>
+    </div>    
+
+
+
+    <!-- include/exculde ilias footer -->
+    <!-- <div class="container mt-5">
+      <div class="row">
+        <p style="text-align: center; font-size: 20pt; font-weight: bold;" class="footer-ilias-cl">
+          <a href="https://ilias.uni-hohenheim.de/data/UHOH/lm_data/lm_1781360/index_ilias.html"><em>Back to Startpage</em></a>
+        </p>
+      </div>
+    </div> -->
+
+    <!-- include/exculde github footer -->
+    <!-- <div class="container mt-5">
+      <div class="row">
+        <p style="text-align: center; font-size: 20pt; font-weight: bold;" class="footer-github-cl">
+          <a href="https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/index.html"><em>Back to Startpage</em></a>
+        </p>
+      </div>
+    </div> -->
+
+    <!-- footer logos -->
+    <div class="container mt-5">
+      <div class="row">
+
+        <hr>
+        <table style="width:100%">
+          <tr>
+            <td style="width: 25%; text-align: left; padding-left: 10%;">
+              <img src="./assets/RZ_UniHohenheim_Logo_4C_E_blau_EN.svg" height="10%"/>
+            </td>
+            <td style="width: 50%; text-align: center;">
+              <p style="font-size: 75%; text-align: center;">This module is part of the <a href="https://www.uni-hohenheim.de/en/project-dellfi">DeLLFi</a> project of the University of Hohenheim and funded by the <br> <a href="https://stiftung-hochschullehre.de/">Foundation for Innovation in University Teaching</a></p>
+              <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                <img alt="Creative Commons License" style="border-width:0; padding-top: -20px;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" height="10%"/>
+              </a> 
+            </td>
+            <td style="width: 25%; text-align: right; padding-right: 10%;">
+              <img src="./assets/Logo_Stiftung_Hochschullehre.svg" height="10%"/>
+            </td>
+          </tr>
+        </table>
+        <hr>      
+
+      </div>
+    </div>
+
+    <!-- include mathjax js via cdn -->
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+
+    <script>
+
+    var dropdownSliders0 = document.getElementById("sliders");
+    var dropdownFigures0 = document.getElementById("figures");
+    dropdownSliders0.selectedIndex = 0;
+    dropdownFigures0.selectedIndex = 0;
+
+    function goToTemplate() {
+      
+        var dropdownSliders = document.getElementById("sliders");
+        console.log(dropdownSliders);
+        var dropdownFigures = document.getElementById("figures");
+        console.log(dropdownFigures);
+
+        var selectedSlider = dropdownSliders.options[dropdownSliders.selectedIndex].value;
+        var selectedFigure = dropdownFigures.options[dropdownFigures.selectedIndex].value;
+
+        console.log(selectedSlider + selectedFigure)
+
+        selectedTemplate = './templates/0' + selectedSlider + '_0' + selectedFigure + '_template.html'
+
+        console.log(selectedTemplate);
+
+        window.location = selectedTemplate;
+
+    }
+
+    </script>
+
+  </body>
+</html>
