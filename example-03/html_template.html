@@ -4,7 +4,7 @@
   
     <title>
       
-      example 2
+      example 3
       
     </title>
     
@@ -176,9 +176,10 @@
                       <img src="./figures/figure_01.svg" alt="" class="figure-cl" id="figure1Id" style="max-width: 75%;">
 
                       <textarea rows="1" cols="1" id="tab-1-header-id" style="width: 100%;">Header tab 1</textarea>
-                      <textarea rows="1" cols="1" id="audio-text-figure-1-overall-id" style="width: 100%;">Insert the overall explanation of figure 1 here!</textarea>
-                      <textarea rows="1" cols="1" id="audio-text-figure-1-slider-1-id" style="width: 100%;">Insert the explanation of effect of slider 1 on figure 1 here!</textarea>
-                      <textarea rows="1" cols="1" id="audio-text-figure-1-slider-2-id" style="width: 100%;">Insert the explanation of effect of slider 1 on figure 1 here!</textarea>                      
+                      <textarea rows="1" cols="1" id="figure-1-explanation-id" style="width: 100%;">Insert the overall explanation of figure 1 here!</textarea>
+                      <textarea rows="1" cols="1" id="audio-text-figure-1-overall-id" style="width: 100%;">Insert the overall audio explanation of figure 1 here!</textarea>
+                      <textarea rows="1" cols="1" id="audio-text-figure-1-slider-1-id" style="width: 100%;">Insert the audio explanation of effect of slider 1 on figure 1 here!</textarea>
+                      <textarea rows="1" cols="1" id="audio-text-figure-1-slider-2-id" style="width: 100%;">Insert the audio explanation of effect of slider 1 on figure 1 here!</textarea>                      
 
                     </div>                                        
                       <p class="audio-show-text-cl" id="audio-show-text-figure-1-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
@@ -202,9 +203,10 @@
                       <img src="./figures/figure_02.svg" alt="" class="figure-cl" id="figure-2-id" style="max-width: 75%;">
 
                       <textarea rows="1" cols="1" id="tab-2-header-id" style="width: 100%;">Header tab 2</textarea>
-                      <textarea rows="1" cols="1" id="audio-text-figure-2-overall-id" style="width: 100%;">Insert the overall explanation of figure 2 here!</textarea>
-                      <textarea rows="1" cols="1" id="audio-text-figure-2-slider-1-id" style="width: 100%;">Insert the explanation of effect of slider 1 on figure 2 here!</textarea>
-                      <textarea rows="1" cols="1" id="audio-text-figure-2-slider-2-id" style="width: 100%;">Insert the explanation of effect of slider 2 on figure 2 here!</textarea>                      
+                      <textarea rows="1" cols="1" id="figure-2-explanation-id" style="width: 100%;">Insert the overall explanation of figure 2 here!</textarea>
+                      <textarea rows="1" cols="1" id="audio-text-figure-2-overall-id" style="width: 100%;">Insert the overall audio explanation of figure 2 here!</textarea>
+                      <textarea rows="1" cols="1" id="audio-text-figure-2-slider-1-id" style="width: 100%;">Insert the audio explanation of effect of slider 1 on figure 2 here!</textarea>
+                      <textarea rows="1" cols="1" id="audio-text-figure-2-slider-2-id" style="width: 100%;">Insert the audio explanation of effect of slider 2 on figure 2 here!</textarea>                      
 
                     </div>                                        
                       <p class="audio-show-text-cl" id="audio-show-text-figure-2-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
@@ -228,9 +230,10 @@
                       <img src="./figures/figure_03.svg" alt="" class="figure-cl" id="figure-3-id" style="max-width: 75%;">
 
                       <textarea rows="1" cols="1" id="tab-3-header-id" style="width: 100%;">Header tab 3</textarea>
-                      <textarea rows="1" cols="1" id="audio-text-figure-3-overall-id" style="width: 100%;">Insert the overall explanation of figure 3 here!</textarea>
-                      <textarea rows="1" cols="1" id="audio-text-figure-3-slider-1-id" style="width: 100%;">Insert the explanation of effect of slider 1 on figure 3 here!</textarea>
-                      <textarea rows="1" cols="1" id="audio-text-figure-3-slider-2-id" style="width: 100%;">Insert the explanation of effect of slider 2 on figure 3 here!</textarea>                      
+                      <textarea rows="1" cols="1" id="figure-3-explanation-id" style="width: 100%;">Insert the overall explanation of figure 3 here!</textarea>
+                      <textarea rows="1" cols="1" id="audio-text-figure-3-overall-id" style="width: 100%;">Insert the overall audio explanation of figure 3 here!</textarea>                      
+                      <textarea rows="1" cols="1" id="audio-text-figure-3-slider-1-id" style="width: 100%;">Insert the audio explanation of effect of slider 1 on figure 3 here!</textarea>
+                      <textarea rows="1" cols="1" id="audio-text-figure-3-slider-2-id" style="width: 100%;">Insert the audio explanation of effect of slider 2 on figure 3 here!</textarea>                      
 
                     </div>                                        
                       <p class="audio-show-text-cl" id="audio-show-text-figure-3-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
@@ -357,6 +360,10 @@
     var figure1Header = document.getElementById('figure-1-header-id').value;
     var figure2Header = document.getElementById('figure-2-header-id').value;
     var figure3Header = document.getElementById('figure-3-header-id').value;
+
+    var figure1Explanation = document.getElementById('figure-1-explanation-id').value;
+    var figure2Explanation = document.getElementById('figure-2-explanation-id').value;
+    var figure3Explanation = document.getElementById('figure-3-explanation-id').value;
 
     var audioTextFigure1Overall = generateAudioText( document.getElementById('audio-text-figure-1-overall-id').value );
     var audioTextFigure1Slider1 = generateAudioText( document.getElementById('audio-text-figure-1-slider-1-id').value );
@@ -520,8 +527,7 @@
                           <img src=".\/figures\/figure_01.svg" alt="" class="figure-cl" id="figure1Id" style="max-width: 75%;">
                         <\/div>                                        
                         <p class="audio-show-text-cl" id="audio-show-text-figure-1-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"><\/p>
-                        <div>
-                        <\/div>
+                        ${figure1Explanation}
                       <\/div>
                       
                       <div id="tab-content-l1-n2-id" class="tab-content-l1-cl">
@@ -540,8 +546,7 @@
                           <img src=".\/figures\/figure_02.svg" alt="" class="figure-cl" id="figure2Id" style="max-width: 75%;">
                         <\/div>                                        
                         <p class="audio-show-text-cl" id="audio-show-text-figure-2-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"><\/p>
-                        <div>
-                        <\/div>
+                        ${figure2Explanation}
                       <\/div>
 
                       <div id="tab-content-l1-n3-id" class="tab-content-l1-cl">
@@ -560,8 +565,7 @@
                           <img src=".\/figures\/figure_03.svg" alt="" class="figure-cl" id="figure3Id" style="max-width: 75%;">
                         <\/div>                                        
                         <p class="audio-show-text-cl" id="audio-show-text-figure-3-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"><\/p>
-                        <div>
-                        <\/div>
+                        ${figure3Explanation}
                       <\/div>
 
                     <\/div>
@@ -677,8 +681,8 @@
 
       }
       var figures = {
-        'tab_name': [1, 1],
-        'tab_header': ['header 1', 'header 2'],
+        'tab_name': [1, 1, 1],
+        'tab_header': ['header 1', 'header 2', 'header 3'],
       }
       
     <\/script>
