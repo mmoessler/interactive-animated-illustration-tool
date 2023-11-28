@@ -7,11 +7,11 @@
 Bernoulli Distribution - Sample Average - Sampling Distribution
 
 <!--..................................................-->
-<!-- header no. 1 -->
+<!-- header 1 -->
 Properties of the Sample Average as Estimator for the Mean
 
 <!--..................................................-->
-<!-- header no. 2 -->
+<!-- header 2 -->
 Bernoulli Distribution
 
 
@@ -53,31 +53,31 @@ Change the parameters and see the effect on the properties of the sample average
 <!-- Parameters -->
 
 <!--..................................................-->
-<!-- slider no. 1 header -->
+<!-- slider 1 header -->
 Sample size \(n\)
 
 <!--..................................................-->
-<!-- parameter no. 1 -->
+<!-- parameter 1 -->
 n
 
 <!--..................................................-->
-<!-- parameter no. 1 values -->
+<!-- parameter 1 values -->
 5, 10, 25, 50, 100
 
 <!--..................................................-->
-<!-- parameter no. 1 start -->
+<!-- parameter 1 start -->
 2
 
 <!--..................................................-->
-<!-- parameter no. 1 button header -->
+<!-- button 1 header -->
 Animate \(n\)
 
 <!--..................................................-->
-<!-- slider no. 2 header -->
+<!-- slider 2 header -->
 Probability of <br> success \(p\)
 
 <!--..................................................-->
-<!-- parameter no. 2 -->
+<!-- parameter 2 -->
 p
 
 <!--..................................................-->
@@ -89,7 +89,7 @@ p
 2
 
 <!--..................................................-->
-<!-- parameter no. 2 button header -->
+<!-- button 2 header -->
 Animate \(p\)
 
 
@@ -102,7 +102,7 @@ Animate \(p\)
 Bar chart
 
 <!--..................................................-->
-<!-- header tab no. 1 -->
+<!-- header tab 1 -->
 Realizations
 
 <!--..................................................-->
@@ -169,11 +169,11 @@ Changing the probability of success, i.e., changing the mean of the underlying D
 Histogram of the standardized sample average \(z_{\overline{Y}}\)
 
 <!--..................................................-->
-<!-- header tab no. 3 -->
+<!-- header tab 3 -->
 Std. Estimates
 
 <!--..................................................-->
-<!-- overall explanation figure no. 3 -->
+<!-- overall explanation figure 3 -->
 As the sample size \(n\) grows the distribution of the standardized sample average,
 $$
 \begin{align}
@@ -184,17 +184,17 @@ $$
 gets closer to the standard normal distribution \(N\left(0, 1\right)\).
 
 <!--..................................................-->
-<!-- overall audio explanation of figure no. 3 -->
+<!-- overall audio explanation of figure 3 -->
 The figure shows:<br></span>
 The histogram of all standardized sample averages for all realizations of the DGP.
 The red vertical dashed line represents the standardized sample average for one particular realization of the DGP.
 The green vertical dashed curve represents the pdf of the standard normal distribution.
 
 <!--..................................................-->
-<!-- audio explanation of effect of slider 1 on figure no. 3 -->
+<!-- audio explanation of effect of slider 1 on figure 3 -->
 By increasing the sample size the sampling distribution of the standardized sample average gets closer to the standard normal distribution which pdf is illustrated by the green dashed curve.
 This is the results of the central limit theorem.
 
 <!--..................................................-->
-<!-- audio explanation of effect of slider 2 on figure no. 3 -->
+<!-- audio explanation of effect of slider 2 on figure 3 -->
 Changing the probability of success does not effect the results of the central limit theorem.
