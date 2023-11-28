@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
   
-    <title>
-      
-      example 2
-      
-    </title>
+  <title>
     
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    2-slider_2-figures_template
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
-    
-    <!-- my style sheet -->
-    <link rel="stylesheet" href="../assets/mystyle.css">
-    
-    <!-- logo -->
-    <div class="logo-cl header-01-cl" style="text-align:center; padding-top: 20px; padding-bottom: 20px;" background-color="#eeeeee;">
-      <img src="../assets/RZ_UniHohenheim_Logo_1C_Weiss_EN.svg" height="250px"\/>
-    </div>
-    
-  </head>
+  </title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
+  
+  <!-- my style sheet -->
+  <link rel="stylesheet" href="../assets/mystyle.css">
+  
+  <!-- logo -->
+  <div class="logo-cl header-01-cl" style="text-align:center; padding-top: 20px; padding-bottom: 20px;" background-color="#eeeeee;">
+    <img src="../assets/RZ_UniHohenheim_Logo_1C_Weiss_EN.svg" height="250px"\/>
+  </div>
+  
+</head>
 
 <body>
-
+  
   <div class="container mt-5">
     <div class="row">
       
       <div class="jumbotron top-jumb-cl" style="margin-top: 50px; padding: 25px 50px 25px 50px;">
         
         <div style='font-size: 28pt; margin-bottom: 0px;'>
-          <textarea rows="1" cols="1" id="header-1-id" style="width: 70%; margin-right: 1%;">Insert header no. 1 here!</textarea><textarea rows="1" cols="1" id="title-id" style="width: 29%;">Insert title here!</textarea>
+          <textarea rows="1" cols="1" id="header-1-id" style="width: 70%; margin-right: 1%;">Insert "header 1" here!</textarea><textarea rows="1" cols="1" id="title-id" style="width: 29%;">Insert "title" here!</textarea>
         </div>
-
+        
         <div style='font-size: 18pt;'>
-          <textarea rows="1" cols="1" id="header-2-id" style="width: 100%;">Insert header no. 2 here!</textarea>
+          <textarea rows="1" cols="1" id="header-2-id" style="width: 100%;">Insert "header 2" here!</textarea>
         </div> 
         
       </div>
@@ -53,208 +53,210 @@
         
         <div style="margin-left: 10pt;">
           
-          <textarea rows="1" cols="1" id="topic-id" style="width: 100%;">Insert the topic of the module here!</textarea>
-                      
+          <textarea rows="10" cols="1" id="topic-id" style="width: 100%;">Insert the "topic" of the module here!</textarea>
+          
         </div>
         
       </div>
+      
     </div>
-    
-    <div class="container mt-5">
-      <div class="row">
+  </div>
+  
+  <div class="container mt-5">
+    <div class="row">
+      
+      <div class="jumbotron outer-jumb-cl" style="padding: 25px 50px 25px 50px">
         
-        <div class="jumbotron outer-jumb-cl" style="padding: 25px 50px 25px 50px">
+        <p style="font-size: 18pt">Illustration</p>
+        
+        <div style="margin-left: 10pt;">
           
-          <p style="font-size: 18pt">Illustration</p>
+          <textarea rows="1" cols="1" id="illustration-id" style="width: 100%;">Insert the "illustration" of the module here!</textarea>
           
-          <div style="margin-left: 10pt;">
+        </div>
+        
+        <div class="container mt-5" style="margin-top: 50px;">
+          <div class="row">
             
-            <textarea rows="1" cols="1" id="illustration-id" style="width: 100%;">Insert the illustration of the module here!</textarea>
-                        
-          </div>
-          
-          <div class="container mt-5" style="margin-top: 50px;">
-            <div class="row">
-                            
-              <div class="col-sm-3" style="margin-top: 90px;">
-                <div class="jumbotron inner-jumb-cl" style="padding: 25px 50px 25px 50px">
-                  
-                  <p style="font-size: 14pt; text-align: center;">Parameters</p>
-                  
-                  <div style='margin-top: 50px;'>
-
-                    <hr>
-                    <div style='font-size: small; text-align: center;'>
-                      <textarea rows="1" cols="1" id="slider-1-header-id" style="height: 30px; width: 100%;">Header slider 1</textarea>
-                      <textarea rows="1" cols="1" id="slider-1-parameter-id" style="height: 30px; width: 100%;">Parameter 1</textarea>
-                      <table style="width: 100%; font-size: small;">
-                        <tr>
-                          <td style="width: 25%;">
-                            <label for="slider-1-values-id">Values:</label>
-                          </td>
-                          <td style="width: 75%; padding-left: 5px;">
-                            <textarea rows="1" cols="1" id="slider-1-values-id" style="height: 20px; width: 100%;">-3, -1.5, 0, 1.5, 3</textarea>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style="width: 25%;">
-                            <label for="slider-1-start-index-id">Start:</label>
-                          </td>
-                          <td style="width: 75%; padding-left: 5px;">
-                            <textarea rows="1" cols="1" id="slider-1-initial-index-id" style="height: 20px; width: 100%;">2</textarea>
-                          </td>
-                        </tr>
-                      </table>
-                      <textarea rows="1" cols="1" id="slider-1-button-header-id" style="height: 30px; width: 100%;">Header button 1</textarea>
-                    </div>
-
-                    <hr>
-                    <div style='font-size: small; text-align: center;'>
-                      <textarea rows="1" cols="1" id="slider-2-header-id" style="height: 30px; width: 100%;">Header slider 2</textarea>
-                      <textarea rows="1" cols="1" id="slider-2-parameter-id" style="height: 30px; width: 100%;">Parameter 2</textarea>
-                      <table style="width: 100%; font-size: small;">
-                        <tr>
-                          <td style="width: 25%;">
-                            <label for="slider-2-values-id">Values:</label>
-                          </td>
-                          <td style="width: 75%; padding-left: 5px;">
-                            <textarea rows="1" cols="1" id="slider-2-values-id" style="height: 20px; width: 100%;">0.1, 0.5, 1, 1.5, 2</textarea>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style="width: 25%;">
-                            <label for="slider-2-start-index-id">Start:</label>
-                          </td>
-                          <td style="width: 75%; padding-left: 5px;">
-                            <textarea rows="1" cols="1" id="slider-2-initial-index-id" style="height: 20px; width: 100%;">2</textarea>
-                          </td>
-                        </tr>
-                      </table>
-                      <textarea rows="1" cols="1" id="slider-2-button-header-id" style="height: 30px; width: 100%;">Header button 2</textarea>
-                    </div>
-                                        
-                  </div>
-                  
-                </div>
-              </div>
-              
-              <div class="col-sm-9">
-                <div class="jumbotron inner-jumb-cl" style="padding: 15px 50px 25px 50px">
-                  
-                  <!-- <br> -->
-                  <div class="tab" style="text-align: center;">
-                  
-                    <button class="tab-link-l1-cl" onclick="openSpecificTab('tab-content-l1-n1-id', 'tab-link-l1-n1-id', 'white')" id="tab-link-l1-n1-id">
-                      Tab 1
-                    </button>            
+            <div class="col-sm-3" style="margin-top: 90px;">
+              <div class="jumbotron inner-jumb-cl" style="padding: 25px 50px 25px 50px">
                 
-                    <button class="tab-link-l1-cl" onclick="openSpecificTab('tab-content-l1-n2-id', 'tab-link-l1-n2-id', 'white')" id="tab-link-l1-n2-id">
-                      Tab 2
-                    </button>            
+                <p style="font-size: 14pt; text-align: center;">Parameters</p>
                 
-                    <hr>
-                    
-                  </div>
+                <div style='margin-top: 50px;'>
                   
-                  <div id="tab-content-l1-n1-id" class="tab-content-l1-cl">
-                    <table style="width:100%; margin-bottom: 10px;">
+                  <hr>
+                  <div style='font-size: small; text-align: center;'>
+                    <textarea rows="1" cols="1" id="slider-1-header-id" style="height: 30px; width: 100%;">"Slider 1 header"</textarea>
+                    <textarea rows="1" cols="1" id="slider-1-parameter-id" style="height: 30px; width: 100%;">"Parameter 1"</textarea>
+                    <table style="width: 100%; font-size: small;">
                       <tr>
-                        <td style="width: 10%"></td>
-                        <td style="width: 80%; font-size: 14pt; text-align: left;">
-                          <textarea rows="1" cols="1" id="figure-1-header-id" style="height: 30px; width: 100%;">Insert header of figure 1 here!</textarea>
+                        <td style="width: 25%;">
+                          <label for="slider-1-values-id">Values:</label>
                         </td>
-                        <td style="width: 10%; font-size: 14pt; text-align: right;">
-                          <button class="explain-button-cl">Explain</button>
+                        <td style="width: 75%; padding-left: 5px;">
+                          <textarea rows="1" cols="1" id="slider-1-values-id" style="height: 20px; width: 100%;"></textarea>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="width: 25%;">
+                          <label for="slider-1-start-index-id">Start:</label>
+                        </td>
+                        <td style="width: 75%; padding-left: 5px;">
+                          <textarea rows="1" cols="1" id="slider-1-initial-index-id" style="height: 20px; width: 100%;"></textarea>
                         </td>
                       </tr>
                     </table>
-                    <div style="text-align: center;">
-                      <img src="./figures/figure_01.svg" alt="" class="figure-cl" id="figure-1-id" style="max-width: 75%;">
-
-                      <textarea rows="1" cols="1" id="tab-1-header-id" style="width: 100%;">Header tab 1</textarea>
-                      <textarea rows="1" cols="1" id="figure-1-explanation-id" style="width: 100%;">Insert the overall explanation of figure 1 here!</textarea>
-                      <textarea rows="1" cols="1" id="audio-text-figure-1-overall-id" style="width: 100%;">Insert the overall audio explanation of figure 1 here!</textarea>
-                      <textarea rows="1" cols="1" id="audio-text-figure-1-slider-1-id" style="width: 100%;">Insert the audio explanation of effect of slider 1 on figure 1 here!</textarea>
-                      <textarea rows="1" cols="1" id="audio-text-figure-1-slider-2-id" style="width: 100%;">Insert the audio explanation of effect of slider 1 on figure 1 here!</textarea>                      
-
-                    </div>                                        
-                      <p class="audio-show-text-cl" id="audio-show-text-figure-1-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
-                    <div>
-                    </div>
+                    <textarea rows="1" cols="1" id="slider-1-button-header-id" style="height: 30px; width: 100%;">"Button 1 header"</textarea>
                   </div>
-
-                  <div id="tab-content-l1-n2-id" class="tab-content-l1-cl">
-                    <table style="width:100%; margin-bottom: 10px;">
+                  
+                  <hr>
+                  <div style='font-size: small; text-align: center;'>
+                    <textarea rows="1" cols="1" id="slider-2-header-id" style="height: 30px; width: 100%;">"Slider 2 header"</textarea>
+                    <textarea rows="1" cols="1" id="slider-2-parameter-id" style="height: 30px; width: 100%;">"Parameter 2"</textarea>
+                    <table style="width: 100%; font-size: small;">
                       <tr>
-                        <td style="width: 10%"></td>
-                        <td style="width: 80%; font-size: 14pt; text-align: left;">
-                          <textarea rows="1" cols="1" id="figure-2-header-id" style="height: 30px; width: 100%;">Insert header of figure 2 here!</textarea>
+                        <td style="width: 25%;">
+                          <label for="slider-2-values-id">Values:</label>
                         </td>
-                        <td style="width: 10%; font-size: 14pt; text-align: right;">
-                          <button class="explain-button-cl">Explain</button>
+                        <td style="width: 75%; padding-left: 5px;">
+                          <textarea rows="1" cols="1" id="slider-2-values-id" style="height: 20px; width: 100%;"></textarea>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="width: 25%;">
+                          <label for="slider-2-start-index-id">Start:</label>
+                        </td>
+                        <td style="width: 75%; padding-left: 5px;">
+                          <textarea rows="1" cols="1" id="slider-2-initial-index-id" style="height: 20px; width: 100%;"></textarea>
                         </td>
                       </tr>
                     </table>
-                    <div style="text-align: center;">
-                      <img src="./figures/figure_02.svg" alt="" class="figure-cl" id="figure-2-id" style="max-width: 75%;">
-
-                      <textarea rows="1" cols="1" id="tab-2-header-id" style="width: 100%;">Header tab 2</textarea>
-                      <textarea rows="1" cols="1" id="figure-2-explanation-id" style="width: 100%;">Insert the overall explanation of figure 2 here!</textarea>
-                      <textarea rows="1" cols="1" id="audio-text-figure-2-overall-id" style="width: 100%;">Insert the overall audio explanation of figure 2 here!</textarea>
-                      <textarea rows="1" cols="1" id="audio-text-figure-2-slider-1-id" style="width: 100%;">Insert the audio explanation of effect of slider 1 on figure 2 here!</textarea>
-                      <textarea rows="1" cols="1" id="audio-text-figure-2-slider-2-id" style="width: 100%;">Insert the audio explanation of effect of slider 1 on figure 2 here!</textarea>                      
-
-                    </div>                                        
-                      <p class="audio-show-text-cl" id="audio-show-text-figure-2-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
-                    <div>
-                    </div>
+                    <textarea rows="1" cols="1" id="slider-2-button-header-id" style="height: 30px; width: 100%;">"Button 2 header"</textarea>
                   </div>
                   
                 </div>
                 
               </div>
             </div>
+            
+            <div class="col-sm-9">
+              <div class="jumbotron inner-jumb-cl" style="padding: 15px 50px 25px 50px">
+                
+                <!-- <br> -->
+                <div class="tab" style="text-align: center;">
+                  
+                  <button class="tab-link-l1-cl" onclick="openSpecificTab('tab-content-l1-n1-id', 'tab-link-l1-n1-id', 'white')" id="tab-link-l1-n1-id">
+                    Tab 1
+                  </button>            
+                  
+                  <button class="tab-link-l1-cl" onclick="openSpecificTab('tab-content-l1-n2-id', 'tab-link-l1-n2-id', 'white')" id="tab-link-l1-n2-id">
+                    Tab 2
+                  </button>            
+                  
+                  <hr>
+                  
+                </div>
+                
+                <div id="tab-content-l1-n1-id" class="tab-content-l1-cl">
+                  <table style="width:100%; margin-bottom: 10px;">
+                    <tr>
+                      <td style="width: 10%"></td>
+                      <td style="width: 80%; font-size: 14pt; text-align: left;">
+                        <textarea rows="1" cols="1" id="figure-1-header-id" style="height: 30px; width: 100%;">Insert "header of figure 1" here!</textarea>
+                      </td>
+                      <td style="width: 10%; font-size: 14pt; text-align: right;">
+                        <button class="explain-button-cl">Explain</button>
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="text-align: center;">
+                    <img src="./figures/figure_01.svg" alt="" class="figure-cl" id="figure-1-id" style="max-width: 75%;">
+                    
+                    <textarea rows="1" cols="1" id="tab-1-header-id" style="width: 100%;">Header tab 1</textarea>
+                    <textarea rows="1" cols="1" id="figure-1-explanation-id" style="width: 100%;">Insert the "overall explanation of figure 1" here!</textarea>
+                    <textarea rows="1" cols="1" id="audio-text-figure-1-overall-id" style="width: 100%;">Insert the "overall audio explanation of figure 1 here!</textarea>
+                    <textarea rows="1" cols="1" id="audio-text-figure-1-slider-1-id" style="width: 100%;">Insert the "audio explanation of effect of slider 1 on figure 1" here!</textarea>
+                    <textarea rows="1" cols="1" id="audio-text-figure-1-slider-2-id" style="width: 100%;">Insert the "audio explanation of effect of slider 1 on figure 1" here!</textarea>                      
+                    
+                  </div>                                        
+                  <p class="audio-show-text-cl" id="audio-show-text-figure-1-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
+                  <div>
+                  </div>
+                </div>
+                
+                <div id="tab-content-l1-n2-id" class="tab-content-l1-cl">
+                  <table style="width:100%; margin-bottom: 10px;">
+                    <tr>
+                      <td style="width: 10%"></td>
+                      <td style="width: 80%; font-size: 14pt; text-align: left;">
+                        <textarea rows="1" cols="1" id="figure-2-header-id" style="height: 30px; width: 100%;">Insert "header of figure 2" here!</textarea>
+                      </td>
+                      <td style="width: 10%; font-size: 14pt; text-align: right;">
+                        <button class="explain-button-cl">Explain</button>
+                      </td>
+                    </tr>
+                  </table>
+                  <div style="text-align: center;">
+                    <img src="./figures/figure_02.svg" alt="" class="figure-cl" id="figure-2-id" style="max-width: 75%;">
+                    
+                    <textarea rows="1" cols="1" id="tab-2-header-id" style="width: 100%;">Header tab 2</textarea>
+                    <textarea rows="1" cols="1" id="figure-2-explanation-id" style="width: 100%;">Insert the "overall explanation of figure 2" here!</textarea>
+                    <textarea rows="1" cols="1" id="audio-text-figure-2-overall-id" style="width: 100%;">Insert the "overall audio explanation of figure 2" here!</textarea>
+                    <textarea rows="1" cols="1" id="audio-text-figure-2-slider-1-id" style="width: 100%;">Insert the "audio explanation of effect of slider 1 on figure 2" here!</textarea>
+                    <textarea rows="1" cols="1" id="audio-text-figure-2-slider-2-id" style="width: 100%;">Insert the "audio explanation of effect of slider 1 on figure 2" here!</textarea>                      
+                    
+                  </div>                                        
+                  <p class="audio-show-text-cl" id="audio-show-text-figure-2-id" style="font-size: 10pt; color: red; font-style: italic; text-align: center; display: none;"></p>
+                  <div>
+                  </div>
+                </div>
+                
+              </div>
+              
+            </div>
           </div>
-          
         </div>
         
       </div>
+      
     </div>
-            
-    <!-- footer logos -->
-    <div class="container mt-5">
-      <div class="row">
-        
-        <hr>
-        <table style="width:100%">
-          <tr>
-            <td style="width: 25%; text-align: left; padding-left: 10%;">
-              <img src="../assets/RZ_UniHohenheim_Logo_4C_E_blau_EN.svg" height="10%"/>
-            </td>
-            <td style="width: 50%; text-align: center;">
-              <p style="font-size: 75%; text-align: center;">This module is part of the <a href="https://www.uni-hohenheim.de/en/project-dellfi">DeLLFi</a> project of the University of Hohenheim and funded by the <br> <a href="https://stiftung-hochschullehre.de/">Foundation for Innovation in University Teaching</a></p>
-              <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-                <img alt="Creative Commons License" style="border-width:0; padding-top: -20px;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" height="10%"/>
-              </a> 
-            </td>
-            <td style="width: 25%; text-align: right; padding-right: 10%;">
-              <img src="../assets/Logo_Stiftung_Hochschullehre.svg" height="10%"/>
-            </td>
-          </tr>
-        </table>
-        <hr>      
-        
-      </div>
-    </div>
-    
-    <!-- <button id="render-download-link-id" style="width: 100%;">Render and downolad html file</button> -->
-    <div style="width: 100%; text-align: center !important; font-size: 50px;">
+  </div>
+  
+  <!-- footer logos -->
+  <div class="container mt-5">
+    <div class="row">
+      
       <hr>
-      <a id="render-download-link-id" href="#" download="myHtml.html">Render and Downolad html File</a>
-      <hr>
+      <table style="width:100%">
+        <tr>
+          <td style="width: 25%; text-align: left; padding-left: 10%;">
+            <img src="../assets/RZ_UniHohenheim_Logo_4C_E_blau_EN.svg" height="10%"/>
+          </td>
+          <td style="width: 50%; text-align: center;">
+            <p style="font-size: 75%; text-align: center;">This module is part of the <a href="https://www.uni-hohenheim.de/en/project-dellfi">DeLLFi</a> project of the University of Hohenheim and funded by the <br> <a href="https://stiftung-hochschullehre.de/">Foundation for Innovation in University Teaching</a></p>
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+              <img alt="Creative Commons License" style="border-width:0; padding-top: -20px;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" height="10%"/>
+            </a> 
+          </td>
+          <td style="width: 25%; text-align: right; padding-right: 10%;">
+            <img src="../assets/Logo_Stiftung_Hochschullehre.svg" height="10%"/>
+          </td>
+        </tr>
+      </table>
+      <hr>      
+      
     </div>
-
-    <script src="../assets/02_02_template_script.js"></script>
-
+  </div>
+  
+  <!-- <button id="render-download-link-id" style="width: 100%;">Render and downolad html file</button> -->
+  <div style="width: 100%; text-align: center !important; font-size: 50px;">
+    <hr>
+    <a id="render-download-link-id" href="#" download="myHtml.html">Render and Downolad html File</a>
+    <hr>
+  </div>
+  
+  <script src="../assets/02_02_template_script.js"></script>
+  
 </body>
 </html>
