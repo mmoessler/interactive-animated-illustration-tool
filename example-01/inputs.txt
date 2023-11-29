@@ -1,0 +1,109 @@
+<!--==================================================-->
+<!-- Title / Header -->
+
+<!--..................................................-->
+<!-- title -->
+Normal Distribution
+
+<!--..................................................-->
+<!-- header 1 -->
+Normal Distribution
+
+<!--..................................................-->
+<!-- header 2 -->
+Parameters of the Normal Distribution
+
+
+
+<!--==================================================-->
+<!-- Overall explanation -->
+
+<!--..................................................-->
+<!-- topic -->
+Understand the effect of changing the "<em>location parameter</em>" \(\mu\) and the "<em>scale parameter</em>" \(\sigma\) on the shape of the probability density function (pdf) and the cumulative probability density function (cdf) of the normal distribution, i.e., for \(Y\) with,
+
+$$
+\begin{align}
+Y &\sim N\left(\mu, \sigma\right),
+\end{align}
+$$
+
+where \(\mu\) is the expected value, \(\text{E}\left(Y\right)\), or, the "<em>location parameter</em>", and \(\sigma\) is the standard deviation \(\sqrt{\text{Var}\left(Y\right)}\), or, the "<em>scale parameter</em>", of the normal distribution.
+
+<!--..................................................-->
+<!-- illustration -->
+Change the parameters and see the effect on the shape of the pdf and cdf of the normal distribution.
+
+
+
+<!--==================================================-->
+<!-- Parameters -->
+
+<!--..................................................-->
+<!-- slider 1 header -->
+Location \(\mu\)
+
+<!--..................................................-->
+<!-- parameter 1 -->
+mu
+
+<!--..................................................-->
+<!-- parameter 1 values -->
+-3, -1.5, 0, 1.5, 3
+
+<!--..................................................-->
+<!-- parameter 1 start -->
+2
+
+<!--..................................................-->
+<!-- button 1 header -->
+Animate \(\mu\)
+
+<!--..................................................-->
+<!-- slider 2 header -->
+Scale \(\sigma\)
+
+<!--..................................................-->
+<!-- parameter 2 -->
+sigma
+
+<!--..................................................-->
+<!-- parameter no. 2 values -->
+0.1, 0.5, 1, 1.5, 2
+
+<!--..................................................-->
+<!-- parameter no. 2 start -->
+2
+
+<!--..................................................-->
+<!-- button 2 header -->
+Animate \(\sigma\)
+
+
+
+<!--==================================================-->
+<!-- Tab no. 1 -->
+
+<!--..................................................-->
+<!-- header figure 1 -->
+Probability Density Function
+
+<!--..................................................-->
+<!-- header tab 1 -->
+
+<!--..................................................-->
+<!-- overall explanation of figure no. 1 -->
+The figure shows the pdf of the normal distribution for the choosen parameters.
+
+<!--..................................................-->
+<!-- overall audio explanation figure no. 1 -->
+The figure shows the pdf of the normal distribution for the choosen parameters.
+
+<!--..................................................-->
+<!-- audio explanation of effect of slider 1 on figure no. 1 -->
+Changing the location parameter shifts the pdf of the normal distribution.
+
+<!--..................................................-->
+<!-- audio explanation of effect of slider 2 on figure no. 1 -->
+Changing the scale parameter compresses and expands the pdf of the normal distribution.
+
