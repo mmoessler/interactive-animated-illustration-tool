@@ -46,7 +46,7 @@ Location \(\mu\)
 
 <!--..................................................-->
 <!-- parameter 1 -->
-mu
+\\mu
 
 <!--..................................................-->
 <!-- parameter 1 values -->
@@ -66,7 +66,7 @@ Scale \(\sigma\)
 
 <!--..................................................-->
 <!-- parameter 2 -->
-sigma
+\\sigma
 
 <!--..................................................-->
 <!-- parameter no. 2 values -->
@@ -99,7 +99,7 @@ The figure shows the pdf of the normal distribution for the choosen parameters.
 
 <!--..................................................-->
 <!-- overall audio explanation figure no. 1 -->
-Changing the location parameter shifts the pdf of the normal distribution.
+The figure shows the pdf of the normal distribution for the choosen parameters.
 
 <!--..................................................-->
 <!-- audio explanation of effect of slider 1 on figure no. 1 -->

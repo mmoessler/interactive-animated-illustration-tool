@@ -145,7 +145,7 @@ $$
 
 <!--..................................................-->
 <!-- overall audio explanation of figure no. 2 -->
-The figure shows:<br></span>
+The figure shows:<br>
 The histogram of all estimated sample averages for all realizations of the DGP.
 The red vertical dashed line represents the sample average for one particular realization of the DGP.
 The green vertical dashed line represents the mean, i.e., the probability of success, of the underlying DGP.
@@ -185,7 +185,7 @@ gets closer to the standard normal distribution \(N\left(0, 1\right)\).
 
 <!--..................................................-->
 <!-- overall audio explanation of figure 3 -->
-The figure shows:<br></span>
+The figure shows:<br>
 The histogram of all standardized sample averages for all realizations of the DGP.
 The red vertical dashed line represents the standardized sample average for one particular realization of the DGP.
 The green vertical dashed curve represents the pdf of the standard normal distribution.

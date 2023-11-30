@@ -32,7 +32,7 @@ where \(\mu\) is the expected value, \(\text{E}\left(Y\right)\), or, the "<em>lo
 
 <!--..................................................-->
 <!-- illustration -->
-Change the parameters and see the effect on the shape of the pdf and cdf of the normal distribution.
+Change the parameters and see the effect on the shape of the pdf of the normal distribution.
 
 
 
@@ -45,7 +45,7 @@ Location \(\mu\)
 
 <!--..................................................-->
 <!-- parameter 1 -->
-mu
+\\mu
 
 <!--..................................................-->
 <!-- parameter 1 values -->
@@ -65,7 +65,7 @@ Scale \(\sigma\)
 
 <!--..................................................-->
 <!-- parameter 2 -->
-sigma
+\\sigma
 
 <!--..................................................-->
 <!-- parameter no. 2 values -->
