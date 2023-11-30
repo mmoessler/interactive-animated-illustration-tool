@@ -280,8 +280,8 @@ renderDownloadLink.addEventListener('click', function() {
 
         }
         var figures = {
-            'tab_name': ['tab 1'],
-            'tab_header': ['header 1'],
+            'tab_name': [],
+            'tab_header': [],
         }
         
         <\/script>
