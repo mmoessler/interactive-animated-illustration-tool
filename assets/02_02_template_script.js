@@ -45,7 +45,8 @@ var renderDownloadLink = document.getElementById('render-download-link-id');
 // Add an event listener to the link to trigger the download
 renderDownloadLink.addEventListener('click', function() {
     
-    var title = document.getElementById('title-id').value;
+    // var title = document.getElementById('title-id').value;
+    var title = 'animated illustration'
     var header1 = document.getElementById('header-1-id').value;
     var header2 = document.getElementById('header-2-id').value;
     var topic = document.getElementById('topic-id').value;
