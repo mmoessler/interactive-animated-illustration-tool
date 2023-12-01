@@ -1,167 +1,352 @@
 <!doctype html>
 <html lang="eng">
-  <head>
-
-    <title>Illustration Tool</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
-
-    <!-- include my style sheet -->
-    <link rel="stylesheet" href="./assets/mystyle.css">
-
-    <style>
-      .access-ilias-cl{
-        display: none;
-      }
-      .access-github-cl{
-        display: block;
-      }
-    </style>
-
-    <!-- logo -->
-    <div class="logo-cl header-01-cl" style="text-align:center; padding-top: 20px; padding-bottom: 20px;" background-color="#eeeeee;">
-      <img src="./assets/RZ_UniHohenheim_Logo_1C_Weiss_EN.svg" height="250px"/>
-    </div>
-
-  </head>
-  <body>
-
-    <div class="container mt-5">
-      <div class="row">
-
-        <div class="jumbotron top-jumb-cl" style="margin-top: 50px; padding: 25px 50px 25px 50px;">
-
-          <p style="font-size: 28pt; text-align: center">Interactive and Animated <br> Illustration Tool</p>
-
-        </div>
+<head>
+  
+  <title>Illustration Tool</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
+  
+  <!-- include my style sheet -->
+  <link rel="stylesheet" href="./assets/mystyle.css">
+  
+  <style>
+    .access-ilias-cl{
+      display: none;
+    }
+    .access-github-cl{
+      display: block;
+    }
+    /* th, td {
+      padding: 15px;
+    } */
+    #selection-table-id th {
+      padding: 15px;
+    }
+    #selection-table-id td {
+      padding: 15px;
+    }
+    
+    /* Styles for centering the video */
+    .video-outer-container-cl {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .video-inner-container-cl {
+      width: 560px; /* Adjust width as needed */
+      height: 315px; /* Adjust height as needed */
+    }
+    
+    .video-inner-container-cl iframe {
+      width: 100%;
+      height: 100%;
+    }
+    
+  </style>
+  
+  <!-- logo -->
+  <div class="logo-cl header-01-cl" style="text-align:center; padding-top: 20px; padding-bottom: 20px;" background-color="#eeeeee;">
+    <img src="./assets/RZ_UniHohenheim_Logo_1C_Weiss_EN.svg" height="250px"/>
+  </div>
+  
+</head>
+<body>
+  
+  <div class="container mt-5">
+    <div class="row">
+      
+      <div class="jumbotron top-jumb-cl" style="margin-top: 50px; padding: 25px 50px 25px 50px;">
+        
+        <p style="font-size: 28pt; text-align: center">Interactive and Animated <br> Illustration Tool</p>
+        
       </div>
     </div>
-
-    <div class="container mt-5">
-      <div class="row">
-
-        <div class="jumbotron" style="padding: 25px 50px 25px 50px">
-
-          <p style="font-size: 18pt">Motivation</p>
-
+  </div>
+  
+  <div class="container mt-5">
+    <div class="row">
+      
+      <div class="jumbotron" style="padding: 25px 50px 25px 50px">
+        
+        <p style="font-size: 18pt">Motivation</p>
+        
+        <div style="margin-left: 20px;">
+          
+          <p>An interactive and animated illustration of otherwise abstract concepts such as the law of large numbers (LLN) and the central limit theorem (CLT) in statistics.</p>
+          
+          <p>The user can either set the inputs manually by using the sliders or by using the animation buttons which start an animation with an audio explanation of the results.</p>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="container mt-5">
+    <div class="row">
+      
+      <div class="jumbotron" style="padding: 25px 50px 25px 50px">
+        
+        <p style="font-size: 18pt">Examples</p>
+        
+        <div style="margin-left: 20px;">
+          
+          <!-- <p>...</p> -->
+          
+          <div>
+            
+            <table style="width:100%">
+              <tr>
+                <th style="width:1%"></th>
+                <th style="width:10%"></th>
+                <th style="width:89%"></th>
+              </tr>
+              <tr>
+                <td style="text-align:center"></td>
+                <td>Example 1:</td>
+                <td>
+                  <a href="./example-01/myHtml.html">Parameters of the Normal Distribution (Illustration I)</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align:center"></td>
+                <td>Example 2:</td>
+                <td>
+                  <a href="./example-02/myHtml.html">Parameters of the Normal Distribution (Illustration II)</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align:center"></td>
+                <td>Example 3:</td>
+                <td>
+                  <a href="./example-03/myHtml.html">Sampling distribution of the Sample Average</a>
+                </td>
+              </tr>                
+            </table>
+            
+            <!-- <p style="text-indent: 20pt">...</p> -->
+            
+          </div>
+          
+        </div>                    
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="container mt-5">
+    <div class="row">
+      
+      <div class="jumbotron" style="padding: 25px 50px 25px 50px">
+        
+        <p style="font-size: 18pt">Approach</p>
+        
+        <div style="margin-left: 20px;">
+          
+          <p style="font-size: 16pt">Step 1) Download the material</p>
+          
           <div style="margin-left: 20px;">
-
-            <p>An interactive and animated illustration of otherwise abstract concepts such as the law of large numbers (LLN) and the central limit theorem (CLT) in statistics.</p>
-
-            <p>The user can either set the inputs manually by using the sliders or by using the animation buttons which start an animation with an audio explanation of the results.</p>
-
+            
+            <p>Download the material from the github repository</p>
+            
+            <p style="margin-left: 20px;">
+              <code><a href="https://github.com/mmoessler/interactive-illustration-tool/archive/refs/heads/main.zip">interactive-illustration-tool.zip</a></code>
+            </p>
+            
+            <p>Unpack the <code>.zip</code> file and save the unpacked folder, <code>interactive-illustration-tool</code>, in a directory of your choice.</p>
+            
+            <p>Add a subdirectory for your illustration, e.g., <code>./interactive-illustration-tool/illustration-01</code>.</p>
+            
+            <button type="button" class="coll-button-cl"> <span style="font-size: 14pt;">Watch video instructions</span> </button>
+            <div class="coll-content-cl">
+              
+              <!-- <p>Add your video instruction here!</p> -->
+              
+              <div class="video-outer-container-cl">
+                
+                <div class="video-inner-container-cl">
+                  
+                  <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                  
+                </div>
+                
+              </div>
+              
+            </div>
+            
+          </div>
+          
+          <p style="font-size: 16pt; margin-top: 15px;">Step 2) Create figures</p>
+          
+          <div style="margin-left: 20px;">
+            
+            <!-- <p>Create for each parameterization, i.e., for each combination of parameter values, figure(s) for the illustration.</p> -->
+            <p>Create figure(s) for each parameterization, i.e., for each figure and each combination of parameter values.</p>
+            
+            <p>Save all figures in a subdirectory using the following naming convention:</p>
+            
+            <p style="margin-left: 20px;"><code>./interactive-illustration-tool/illustration-01/figures/figure_0X_a_b_c</code>,</p>
+            
+            <p>where <code>X</code> is the index for the figures and <code>a</code>, <code>b</code>, <code>c</code>, ..., are the indices for the slider 1, 2, 3, ..., respectively.</p>
+            
+            <button type="button" class="coll-button-cl"> <span style="font-size: 14pt;">Watch video instructions</span> </button>
+            <div class="coll-content-cl">
+              
+              <!-- <p>Add your video instruction here!</p> -->
+              
+              <div class="video-outer-container-cl">
+                
+                <div class="video-inner-container-cl">
+                  
+                  <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                  
+                </div>
+                
+              </div>
+              
+            </div>
+            
+          </div>
+          
+          <p style="font-size: 16pt; margin-top: 15px;">Step 3) Create HTML file</p>
+          
+          <div style="margin-left: 20px;">
+            
+            <p>Choose a template according to the number of figures and sliders in your illustration:</p>
+            
+            <div style="margin-bottom: 15px;">
+              
+              <table id="selection-table-id" style="width: 50%; margin: auto;">
+                <tr style="display: none;">
+                  <th style="width:10%;">
+                  </th>
+                  <th style="width:30%;">
+                  </th>
+                  <th style="width:25%;">
+                  </th>
+                  <th style="width:35%;">
+                  </th>
+                </tr>
+                <tr>                  
+                  <tr>
+                    <td>
+                      <!-- <label for="sliders" style="font-weight: normal;">Choose the number of sliders:</label> -->
+                    </td>
+                    <td style="background-color: white; text-align: right;">
+                      <select id="sliders" style="width: 100px;">
+                        <option value="2" selected>2 sliders</option>
+                        <!-- Add more options as needed -->
+                      </select>
+                    </td>
+                    <td rowspan="2" style="background-color: white;">
+                      <button onclick="goToTemplate()">Submit</button>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <!-- <label for="figures" style="font-weight: normal;">Choose the number of figures:</label> -->
+                    </td>
+                    <td style="background-color: white; text-align: right;">
+                      <select id="figures" style="width: 100px;">
+                        <option value="1" selected>1 figure</option>
+                        <option value="2">2 figures</option>
+                        <option value="3">3 figures</option>
+                        <!-- Add more options as needed -->
+                      </select>
+                    </td>
+                    <td></td>
+                  </tr>
+                </table>
+                
+              </div>
+              
+              <p>Save the generated <code>myHtml.html</code> file in <code>./interactive-illustration-tool/illustration-01</code>.</p>
+              
+              <button type="button" class="coll-button-cl"> <span style="font-size: 14pt;">Watch video instructions</span> </button>
+              <div class="coll-content-cl">
+                
+                <!-- <p>Add your video instruction here!</p> -->
+                
+                <div class="video-outer-container-cl">
+                  
+                  <div class="video-inner-container-cl">
+                    
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                    
+                  </div>
+                  
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            <p style="font-size: 16pt; margin-top: 15px;">Step 4) Check the results</p>
+            
+            <div style="margin-left: 20px;">
+              
+              <p>Check the results by opening the file <code>./interactive-illustration-tool/illustration-01/myHtml.html</code> in your browser.</p>
+              
+              <button type="button" class="coll-button-cl"> <span style="font-size: 14pt;">Watch video instructions</span> </button>
+              <div class="coll-content-cl">
+                
+                <!-- <p>Add your video instruction here!</p> -->
+                
+                <div class="video-outer-container-cl">
+                  
+                  <div class="video-inner-container-cl">
+                    
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                    
+                  </div>
+                  
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            <p style="font-size: 16pt; margin-top: 15px;">Step 5) Upload files to ILIAS</p>
+            
+            <div style="margin-left: 20px;">
+              
+              <p>Compress the all the material in the directory <code>./interactive-illustration</code> into a <code>.zip</code> file.</p>
+              
+              <p>Upload the <code>.zip</code> file in a <em>Lenrmodul HTML</em> to <em>ILIAS</em>.</p>
+              
+              <p>The illustration tool can be accessed by the following link:</p>
+              
+              <p style="margin-left: 20px; font-size: 12pt;"><code>https://ilias.uni-hohenheim.de/data/UHOH/lm_data/lm_<span style="color: blue;">1234567</span>/interactive-illustration-tool/illustration-01/myHtml.html</code>,</p>
+              
+              <p>where <span style="color: blue;">1234567</span> is the <em>Object-ID</em> generated by <em>ILIAS</em> which can be checked under the <em>Info</em> tag of the <em>Lernmodule HTML</em>.</p>
+              
+              <button type="button" class="coll-button-cl"> <span style="font-size: 14pt;">Watch video instructions</span> </button>
+              <div class="coll-content-cl">
+                
+                <!-- <p>Add your video instruction here!</p> -->
+                
+                <div class="video-outer-container-cl">
+                  
+                  <div class="video-inner-container-cl">
+                    
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                    
+                  </div>
+                  
+                </div>
+                
+              </div>
+              
+            </div> 
+            
           </div>
           
         </div>
       </div>
     </div>
-
-    <div class="container mt-5">
-      <div class="row">
-
-        <div class="jumbotron" style="padding: 25px 50px 25px 50px">
-
-          <p style="font-size: 18pt">Examples</p>
-
-          <div style="margin-left: 20px;">
-          
-            <!-- <p>...</p> -->
-
-            <div>
-
-              <table style="width:100%">
-                <tr>
-                  <th style="width:1%"></th>
-                  <th style="width:10%"></th>
-                  <th style="width:89%"></th>
-                </tr>
-                <tr>
-                  <td style="text-align:center"></td>
-                  <td>Example 1:</td>
-                  <td>
-                    <a href="./example-01/myHtml.html">Parameters of the Normal Distribution (Illustration I)</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="text-align:center"></td>
-                  <td>Example 2:</td>
-                  <td>
-                    <a href="./example-02/myHtml.html">Parameters of the Normal Distribution (Illustration II)</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="text-align:center"></td>
-                  <td>Example 3:</td>
-                  <td>
-                    <a href="./example-03/myHtml.html">Sampling distribution of the Sample Average</a>
-                  </td>
-                </tr>                
-              </table>
-              
-              <!-- <p style="text-indent: 20pt">...</p> -->
-              
-              </div>
-              
-          </div>                    
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container mt-5">
-      <div class="row">
-
-        <div class="jumbotron" style="padding: 25px 50px 25px 50px">
-
-          <p style="font-size: 18pt">Templates</p>
-
-          <div style="margin-left: 20px;">
-          
-            <!-- <p>...</p> -->
-
-            <div>
-
-              <table style="width: 50%; margin: auto;">
-                <tr>
-                  <td>
-                    <label for="sliders" style="font-weight: normal;">Choose the number of sliders:</label>
-                  </td>
-                  <td>
-                    <select id="sliders" style="width: 100px;">
-                      <option value="2" selected>2 sliders</option>
-                      <!-- Add more options as needed -->
-                    </select>
-                  </td>
-                  <td rowspan="2">
-                    <button onclick="goToTemplate()">Submit</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="figures" style="font-weight: normal;">Choose the number of figures:</label>
-                  </td>
-                  <td>      
-                    <select id="figures" style="width: 100px;">
-                      <option value="1" selected>1 figure</option>
-                      <option value="2">2 figures</option>
-                      <option value="3">3 figures</option>
-                      <!-- Add more options as needed -->
-                    </select>
-                  </td>    
-                </tr>
-              </table>
-              
-            </div>
-
-          </div>                    
-
-        </div>
-      </div>
-    </div>    
-
-
-
+    
     <!-- include/exculde ilias footer -->
     <!-- <div class="container mt-5">
       <div class="row">
@@ -170,7 +355,7 @@
         </p>
       </div>
     </div> -->
-
+    
     <!-- include/exculde github footer -->
     <!-- <div class="container mt-5">
       <div class="row">
@@ -179,11 +364,11 @@
         </p>
       </div>
     </div> -->
-
+    
     <!-- footer logos -->
     <div class="container mt-5">
       <div class="row">
-
+        
         <hr>
         <table style="width:100%">
           <tr>
@@ -202,43 +387,61 @@
           </tr>
         </table>
         <hr>      
-
+        
       </div>
     </div>
-
+    
     <!-- include mathjax js via cdn -->
     <script type="text/javascript" id="MathJax-script" async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-    </script>
-
-    <script>
-
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+  </script>
+  
+  <script>
+    
     var dropdownSliders0 = document.getElementById("sliders");
     var dropdownFigures0 = document.getElementById("figures");
     dropdownSliders0.selectedIndex = 0;
     dropdownFigures0.selectedIndex = 0;
-
+    
     function goToTemplate() {
       
-        var dropdownSliders = document.getElementById("sliders");
-        console.log(dropdownSliders);
-        var dropdownFigures = document.getElementById("figures");
-        console.log(dropdownFigures);
-
-        var selectedSlider = dropdownSliders.options[dropdownSliders.selectedIndex].value;
-        var selectedFigure = dropdownFigures.options[dropdownFigures.selectedIndex].value;
-
-        console.log(selectedSlider + selectedFigure)
-
-        selectedTemplate = './templates/0' + selectedSlider + '_0' + selectedFigure + '_template.html'
-
-        console.log(selectedTemplate);
-
-        window.location = selectedTemplate;
-
+      var dropdownSliders = document.getElementById("sliders");
+      console.log(dropdownSliders);
+      var dropdownFigures = document.getElementById("figures");
+      console.log(dropdownFigures);
+      
+      var selectedSlider = dropdownSliders.options[dropdownSliders.selectedIndex].value;
+      var selectedFigure = dropdownFigures.options[dropdownFigures.selectedIndex].value;
+      
+      console.log(selectedSlider + selectedFigure)
+      
+      selectedTemplate = './templates/0' + selectedSlider + '_0' + selectedFigure + '_template.html'
+      
+      console.log(selectedTemplate);
+      
+      window.location = selectedTemplate;
+      
     }
-
-    </script>
-
-  </body>
+    
+    //..............................
+    // handling of collapsibles
+    // see: https://www.w3schools.com/howto/howto_js_collapsible.asp
+    let coll = document.getElementsByClassName("coll-button-cl");
+    let i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    
+  </script>
+  
+</body>
 </html>
