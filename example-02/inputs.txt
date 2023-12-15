@@ -86,12 +86,12 @@ Animate \(\sigma\)
 <!-- Tab no. 1 -->
 
 <!--..................................................-->
-<!-- header figure 1 -->
-Probabilty Density Function
-
-<!--..................................................-->
 <!-- header tab 1 -->
 PDF
+
+<!--..................................................-->
+<!-- header figure 1 -->
+Probabilty Density Function
 
 <!--..................................................-->
 <!-- overall explanation of figure no. 1 -->
@@ -115,12 +115,12 @@ Changing the scale parameter compresses and expands the pdf of the normal distri
 <!-- Tab no. 2 -->
 
 <!--..................................................-->
-<!-- header figure 2 -->
-Cumulative Probability Density Function
-
-<!--..................................................-->
 <!-- header tab no. 2 -->
 CDF
+
+<!--..................................................-->
+<!-- header figure 2 -->
+Cumulative Probability Density Function
 
 <!--..................................................-->
 <!-- overall explanation figure no. 2 -->
