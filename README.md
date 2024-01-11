@@ -2,13 +2,19 @@
 
 This repository contains a template to create an *interactive illustration tool*
 
-The raw template looks like this,
+# Instructions
+
+Instructions for creating an *interactive illustration tool* using some prepared templates can be found here,
 
 ```
 
-https://raw.githack.com/mmoessler/interactive-illustration-tool/main/template-01/html_template_xx.html
+https://raw.githack.com/mmoessler/interactive-illustration-tool/main/index.html
 
 ```
+
+Note, step 4 is only relevant for the integration into [*ILIAS*](https://www.ilias.de/).
+
+## Examples
 
 Examples based on the template look like this,
 
