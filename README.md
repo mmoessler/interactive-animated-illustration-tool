@@ -2,7 +2,30 @@
 
 This repository contains a template to create an *interactive illustration tool*
 
-# Instructions
+## Motivation
+
+<!-- general -->
+A simple tool to satisfy students and instructurs needs:
+
+* Students:
+  * Intuition for abstract concepts using interactive illustration tool.
+  * Combination of verbal or mathematical expression, interactions and anymations with and without audio explanations.
+* Instructors:
+  * Easy to implement and to deploy.
+  * No specific software or software framework.
+
+<!-- particular -->
+An interactive illustration tool to provide intuation for abstract statistical concepts such as:
+
+* [Module 1) Bernoulli distribution and sample average](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/ber-dis-sam-ave/ber_dis_sam_ave.html)
+* [Module 2) Continuous uniform distribution and sample average](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/con-uni-dis-sam-ave/con_uni_dis_sam_ave.html)
+* Simple linear regression model and OLS estimator
+  * [Module 3) Sampling distribution and sample size](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/cs-lin-reg-ols-01/cs_lin_reg_ols_01.html)
+  * [Module 4) Sample size and parameterization of the DGP](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/cs-lin-reg-ols-02/cs_lin_reg_ols_02.html)
+  * [Module 5) Effect of Heteroskedasticitiy](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/cs-lin-reg-ols-03/cs_lin_reg_ols_03.html)
+  * [Module 6) Effect of Omitted Variables](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/cs-lin-reg-ols-04/cs_lin_reg_ols_04.html)
+
+## Instructions
 
 Instructions for creating an *interactive illustration tool* using some prepared templates can be found here,
 
