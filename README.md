@@ -15,7 +15,7 @@ A simple tool to satisfy students and instructurs needs:
   * No specific software or software framework.
 
 <!-- particular -->
-An interactive illustration tool to provide intuation for abstract statistical concepts such as:
+An interactive illustration tool to provide intuation for otherwise abstract statistical concepts such as:
 
 * [Module 1) Bernoulli distribution and sample average](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/ber-dis-sam-ave/ber_dis_sam_ave.html)
 * [Module 2) Continuous uniform distribution and sample average](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/con-uni-dis-sam-ave/con_uni_dis_sam_ave.html)
@@ -24,6 +24,10 @@ An interactive illustration tool to provide intuation for abstract statistical c
   * [Module 4) Sample size and parameterization of the DGP](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/cs-lin-reg-ols-02/cs_lin_reg_ols_02.html)
   * [Module 5) Effect of Heteroskedasticitiy](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/cs-lin-reg-ols-03/cs_lin_reg_ols_03.html)
   * [Module 6) Effect of Omitted Variables](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/cs-lin-reg-ols-04/cs_lin_reg_ols_04.html)
+
+The modules can be proved individually (see links above) or combined (see link below):
+
+* [Interactive and animated illustration tool for statistical concepts](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/index.html)
 
 ## Instructions
 
