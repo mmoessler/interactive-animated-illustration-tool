@@ -14,6 +14,14 @@ https://raw.githack.com/mmoessler/interactive-illustration-tool/main/index.html
 
 Note, step 4 is only relevant for the integration into [*ILIAS*](https://www.ilias.de/).
 
+An integration for the University of Hohnheim can be found here:
+
+```
+
+https://ilias.uni-hohenheim.de/data/UHOH/lm_data/lm_1875758/interactive-illustration-tool/index.html
+
+```
+
 ## Examples
 
 Examples based on the template look like this,
