@@ -48,11 +48,14 @@ https://ilias.uni-hohenheim.de/data/UHOH/lm_data/lm_1875758/interactive-illustra
 ## (More technical) Explanations
 
 * This tool is based on, respectively, is a static website or web app ([see, e.g., w3schools.com](https://www.w3schools.com/howto/howto_website_static.asp)).
-* It does not require server-side software dependencies such as php or node to build one.
-* It is easy to ship and deploy, e.g., via *ILIAS Learning Modules HTML*, because of no server-side software dependencies.
-* :) I think *ILIAS Learning Modules HTML* are the most underated feature tool in ILIAS. For more information [see, e.g., iliastutorials.com](https://iliastutorials.com/html-learning-module/)
-
-
+* Advantages:
+  * It does not require server-side software dependencies such as php or node to build one.
+  * It is easy to ship and deploy, e.g., via *ILIAS Learning Modules HTML*, because of no server-side software dependencies.
+  * I think *ILIAS Learning Modules HTML* are the most underated feature tool in ILIAS. For more information [see, e.g., iliastutorials.com](https://iliastutorials.com/html-learning-module/).
+* Disadvantages:
+  * No dynamic interaction, e.g. with a server-side database possible.
+  * [see, e.g., geeksforgeeks.org](https://www.geeksforgeeks.org/static-vs-dynamic-website/).
+* Note: ``static'' does not mean that it is not interactive. The interactive features of static webpages or web apps relies on client-sider javascript rendering. My impression is that client-side javascript rendering is getting more and more powerful.
 
 ## Licence
 
