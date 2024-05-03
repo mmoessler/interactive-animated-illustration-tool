@@ -5,7 +5,7 @@ This repository contains a template to create an *interactive illustration tool*
 ## Motivation
 
 <!-- general -->
-A simple tool to satisfy students and instructurs needs:
+The goal was to create a simple tool that satisfies students and instructurs needs:
 
 * Students:
   * Intuition for abstract concepts using interactive illustration tool.
@@ -29,7 +29,7 @@ The modules can be proved individually (see links above) or combined (see link b
 
 * [Interactive and animated illustration tool for statistical concepts](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/index.html)
 
-## Instructions
+## (Non-technical) Instructions 
 
 Instructions for creating an *interactive illustration tool* using some prepared templates can be found here,
 
@@ -44,6 +44,15 @@ An integration for the University of Hohnheim can be found here:
 ```
 https://ilias.uni-hohenheim.de/data/UHOH/lm_data/lm_1875758/interactive-illustration-tool/index.html
 ```
+
+## (More technical) Explanations
+
+* This tool is based on, respectively, is a static website or web app ([see, e.g., w3schools.com](https://www.w3schools.com/howto/howto_website_static.asp)).
+* It does not require server-side software dependencies such as php or node to build one.
+* It is easy to ship and deploy, e.g., via *ILIAS Learning Modules HTML*, because of no server-side software dependencies.
+* :) I think *ILIAS Learning Modules HTML* are the most underated feature tool in ILIAS. For more information [see, e.g., iliastutorials.com](https://iliastutorials.com/html-learning-module/)
+
+
 
 ## Licence
 
