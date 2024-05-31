@@ -5,31 +5,32 @@ This repository contains a template to create an *interactive illustration tool*
 ## Motivation
 
 <!-- general -->
-The goal was to create a simple tool that satisfies students and instructurs needs:
+The aim was to create a simple tool that meets the needs of students and teachers:
 
-* Students:
-  * Intuition for abstract concepts using interactive illustration tool.
-  * Combination of verbal or mathematical expression, interactions and anymations with and without audio explanations.
-* Instructors:
+* Needs of students:
+  * Intuition for abstract concepts using an interactive illustration tool.
+  * Combination of verbal or mathematical expression, interactions and animations w/o audio explanations.
+* Needs of teachers:
   * Easy to implement and to deploy.
-  * No specific software or software framework.
+  * No specific software or software framework necessary.
 
 <!-- particular -->
-An interactive illustration tool to provide intuation for otherwise abstract statistical concepts such as:
+An interactive illustration tool to provide intuition for otherwise abstract statistical concepts such as:
 
-* [Module 1) Bernoulli distribution and sample average](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/ber-dis-sam-ave/ber_dis_sam_ave.html)
-* [Module 2) Continuous uniform distribution and sample average](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/con-uni-dis-sam-ave/con_uni_dis_sam_ave.html)
+* Expected value and sample average
+  * [Module 1) Bernoulli distribution and sample average](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/ber-dis-sam-ave/ber_dis_sam_ave.html)
+  * [Module 2) Continuous uniform distribution and sample average](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/con-uni-dis-sam-ave/con_uni_dis_sam_ave.html)
 * Simple linear regression model and OLS estimator
   * [Module 3) Sampling distribution and sample size](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/cs-lin-reg-ols-01/cs_lin_reg_ols_01.html)
   * [Module 4) Sample size and parameterization of the DGP](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/cs-lin-reg-ols-02/cs_lin_reg_ols_02.html)
   * [Module 5) Effect of Heteroskedasticitiy](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/cs-lin-reg-ols-03/cs_lin_reg_ols_03.html)
   * [Module 6) Effect of Omitted Variables](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/cs-lin-reg-ols-04/cs_lin_reg_ols_04.html)
 
-The modules can be proved individually (see links above) or combined (see link below):
+The modules can be provided individually (see links above) or combined (see link below):
 
 * [Interactive and animated illustration tool for statistical concepts](https://raw.githack.com/mmoessler/illustration-statistical-concepts/main/index.html)
 
-## (Non-technical) Instructions 
+## (Non-technical) Instructions
 
 Instructions for creating an *interactive illustration tool* using some prepared templates can be found here,
 
@@ -45,11 +46,18 @@ An integration for the University of Hohnheim can be found here:
 https://ilias.uni-hohenheim.de/data/UHOH/lm_data/lm_1875758/interactive-illustration-tool/index.html
 ```
 
+Underlying concept
+
+* The tool works like a ``flip book''.
+
+* The tool works like a ``flip book''.
+* One only need to generate different numbers for different ``parameterizations'' and name them accordingly.
+
 ## (More technical) Explanations
 
 * This tool is based on, respectively, is a static website or web app ([see, e.g., w3schools.com](https://www.w3schools.com/howto/howto_website_static.asp)).
 * Advantages:
-  * It does not require server-side software dependencies such as php or node to build one.
+  * It does not require server-side software dependencies such as php or node to build on.
   * It is easy to ship and deploy, e.g., via *ILIAS Learning Modules HTML*, because of no server-side software dependencies.
   * I think *ILIAS Learning Modules HTML* are the most underated feature tool in ILIAS. For more information [see, e.g., iliastutorials.com](https://iliastutorials.com/html-learning-module/).
 * Disadvantages:

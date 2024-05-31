@@ -42,6 +42,7 @@ vignettes/*.pdf
 old/
 tests/
 videos/
+slides/
 
 # latex files
 *.sav
